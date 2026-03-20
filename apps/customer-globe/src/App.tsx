@@ -19,8 +19,11 @@ import {
 } from "./lib/filters";
 import type { PublicGlobeDataset, SearchSuggestion } from "./types";
 
-const DATA_PATH = "/data/public-globe.v1.json";
-const INTERNAL_DATA_PATH = "/api/internal-globe.v1.json";
+const BASE_URL = import.meta.env.BASE_URL || "/";
+const joinBasePath = (path: string) =>
+  `${BASE_URL.endsWith("/") ? BASE_URL : `${BASE_URL}/`}${path.replace(/^\/+/, "")}`;
+const DATA_PATH = joinBasePath("data/public-globe.v1.json");
+const INTERNAL_DATA_PATH = joinBasePath("api/internal-globe.v1.json");
 const GlobeScene = lazy(() => import("./components/GlobeScene"));
 
 function useReducedMotion() {
