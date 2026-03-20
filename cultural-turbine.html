@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vape-Jet Cultural Turbine | Mission Control</title>
+    <meta
+      name="description"
+      content="Interactive mission-control view of the Vape-Jet Cultural Turbine and Standard Work System."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand-lockup" href="https://vape-jet.com/" target="_blank" rel="noreferrer">
+          <img
+            class="brand-logo"
+            src="./assets/vape-jet-logo.png"
+            alt="Vape-Jet"
+          />
+        </a>
+        <nav class="topnav">
+          <a href="#flight-path">Flight Path</a>
+          <a href="#command-deck">Command Deck</a>
+          <a href="#authority-grid">Source of Truth</a>
+          <a href="#department-lane">Departments</a>
+          <a href="#command-structure">Command Structure</a>
+          <a href="#upload-gate">Upload Gate</a>
+          <a href="#platform-guide">Guide</a>
+          <a href="#template-hangar">Templates</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Mission Control</p>
+            <h1>Vape-Jet Standard Work System</h1>
+            <p class="hero-text">
+              A flight-ready operating map with the Cultural Turbine at the top, reinforced by
+              mission and vision, and carried into the exact standards teams use to ship,
+              support, build, and improve.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-solid" href="#command-deck">Explore the System</a>
+              <a class="button button-outline" href="#authority-grid">See Source Ownership</a>
+            </div>
+            <div class="hero-scenario-toggle">
+              <p class="eyebrow">Scenario Mode</p>
+              <div class="chip-row" id="scenario-toggle-top"></div>
+            </div>
+            <dl class="stat-strip" id="stat-strip"></dl>
+          </div>
+
+          <div class="hero-panel">
+            <div class="signal-card">
+              <span class="signal-label">Cultural stack</span>
+              <ol class="signal-chain" id="signal-chain"></ol>
+            </div>
+            <div class="signal-card signal-card-secondary">
+              <span class="signal-label">Navigation promise</span>
+              <p class="signal-body">
+                Start from the Cultural Turbine, a supporting mission-and-vision page, or a tool
+                lane and still reach the right standard in a
+                few clicks without duplicating the truth.
+              </p>
+              <ul class="quick-tests">
+                <li>Home -> Cultural Turbine -> Vision and Mission -> Execution</li>
+                <li>Home -> Shared Systems -> Brain -> Remote Session Standard</li>
+                <li>Home -> Departments -> Engineering -> Controlled Engineering Specs</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="flight-path">
+          <div class="section-heading">
+            <p class="eyebrow">Flight Path</p>
+            <h2>From company direction to floor execution</h2>
+            <p>
+              The structure is built to read top-down: why Vape-Jet exists, how culture works,
+              which behaviors matter, and where those expectations become real operating standards.
+            </p>
+          </div>
+          <div class="flight-grid" id="flight-grid"></div>
+        </section>
+
+        <section class="section section-command" id="command-deck">
+          <div class="section-heading">
+            <p class="eyebrow">Command Deck</p>
+            <h2>Browse the operating system by branch</h2>
+            <p>
+              Each branch keeps a different kind of truth: culture, departments, shared systems,
+              cross-functional routing, company rules, and governance.
+            </p>
+          </div>
+
+          <div class="command-layout">
+            <aside class="command-rail">
+              <div class="branch-buttons" id="branch-buttons"></div>
+              <div class="search-dock search-dock-rail" id="search-dock-rail">
+                <label class="search-card" id="search-card" for="search-input">
+                  <span>Search standards</span>
+                  <input
+                    id="search-input"
+                    type="search"
+                    placeholder="Try Odoo, VCMP, BOM, Brain, standups..."
+                  />
+                </label>
+              </div>
+            </aside>
+
+            <div class="command-panel">
+              <div class="command-panel-head">
+                <p class="command-kicker" id="branch-kicker"></p>
+                <h3 id="branch-title"></h3>
+                <p id="branch-summary"></p>
+              </div>
+              <div class="branch-grid" id="branch-grid"></div>
+              <div class="search-results" id="search-results" hidden>
+                <div class="command-panel-head search-results-head">
+                  <div class="search-results-copy">
+                    <p class="command-kicker">Search Results</p>
+                    <h3 id="search-results-heading">Matching standards</h3>
+                    <p id="search-summary"></p>
+                  </div>
+                </div>
+                <div class="branch-grid" id="search-grid"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="authority-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Source of Truth</p>
+            <h2>System authority stays explicit</h2>
+            <p>
+              The operating model only works if teams know which platform owns the record and
+              which page governs the way it is used.
+            </p>
+          </div>
+          <div class="authority-grid" id="authority-cards"></div>
+        </section>
+
+        <section class="section" id="flow-lab">
+          <div class="section-heading">
+            <p class="eyebrow">Flow Lab</p>
+            <h2>Cross-functional handoffs without document drift</h2>
+            <p>
+              Flows route the work. Departments and shared systems hold the detailed instructions.
+            </p>
+          </div>
+          <div class="flow-controls" id="flow-buttons"></div>
+          <div class="flow-stage">
+            <div class="flow-head">
+              <p class="command-kicker" id="flow-kicker"></p>
+              <h3 id="flow-title"></h3>
+              <p id="flow-summary"></p>
+            </div>
+            <div class="flow-steps" id="flow-steps"></div>
+          </div>
+        </section>
+
+        <section class="section" id="department-lane">
+          <div class="section-heading">
+            <p class="eyebrow">Department Lane</p>
+            <h2>Suggested standard works by team</h2>
+            <p>
+              These are the primary homes for role ownership, recurring procedures, training,
+              and department-level operating discipline.
+            </p>
+          </div>
+          <div class="chip-row" id="department-filters"></div>
+          <div class="department-grid" id="department-grid"></div>
+          <article class="department-detail-panel" id="department-detail-panel"></article>
+        </section>
+
+        <section class="section" id="command-structure">
+          <div class="section-heading">
+            <p class="eyebrow">Command Structure</p>
+            <h2>Who owns standards, training, and release authority</h2>
+            <p>
+              This layer shows the command structure behind the platform: who owns the document
+              lanes, who is accountable for training follow-through, and how mature revision and
+              sign-off states look in a live operating system.
+            </p>
+          </div>
+
+          <div class="chip-row" id="scenario-toggle"></div>
+
+          <div class="readiness-layout">
+            <article class="readiness-panel">
+              <div class="readiness-head">
+                <p class="command-kicker">Command Structure</p>
+                <h3>Authority lanes for standards, sign-off, and retraining</h3>
+                <p>
+                  This view keeps owner authority, lead accountability, and crew-level training
+                  acknowledgement in one place so the standard library can map cleanly to people
+                  and release authority.
+                </p>
+              </div>
+              <div class="org-root" id="org-root"></div>
+              <div class="org-grid" id="org-grid"></div>
+            </article>
+
+            <article class="readiness-panel">
+              <div class="readiness-head">
+                <p class="command-kicker">Readiness Dashboard</p>
+                <h3>Progress bars on acknowledgement completeness</h3>
+                <p>
+                  Every standard work item carries an attached training record in this concept
+                  model. Checkboxes in the sign-off lane act as acknowledgement signatures and
+                  immediately update the readiness dashboard below.
+                </p>
+              </div>
+              <div class="training-summary-grid" id="training-summary-grid"></div>
+              <div class="training-progress-list" id="training-progress-list"></div>
+              <div class="retraining-list" id="retraining-list"></div>
+            </article>
+          </div>
+
+          <article class="signoff-panel">
+            <div class="signoff-head">
+              <div>
+                <p class="command-kicker">Crew Sign-Offs</p>
+                <h3>Checkbox acknowledgements tied to revision and retraining triggers</h3>
+                <p>
+                  Use individual or group rows based on the work. Open retraining stays visible for
+                  new releases, lack of understanding, or knowledge drift until acknowledgement is
+                  complete.
+                </p>
+              </div>
+              <div class="chip-row" id="training-filters"></div>
+            </div>
+            <div class="signoff-grid" id="signoff-grid"></div>
+          </article>
+
+          <article class="signoff-panel">
+            <div class="signoff-head">
+              <div>
+                <p class="command-kicker">Document Snapshot</p>
+                <h3>Live-looking standards and doc sets across revision states</h3>
+                <p>
+                  This snapshot shows a mature controlled library with mixed revision states,
+                  acceptance levels, supersede handling, and sign-off progress.
+                </p>
+              </div>
+            </div>
+            <div class="document-grid" id="document-grid"></div>
+          </article>
+        </section>
+
+        <section class="section" id="upload-gate">
+          <div class="section-heading">
+            <p class="eyebrow">Upload Gate</p>
+            <h2>Preflight markdown validation before governed upload</h2>
+            <p>
+              New markdown should land in the right branch automatically, fail cleanly when it
+              misses the template contract, and explain exactly what must be fixed before upload.
+            </p>
+          </div>
+
+          <div class="upload-layout">
+            <article class="upload-panel">
+              <div class="upload-head">
+                <p class="command-kicker">Uploader Gate</p>
+                <h3>Authorized employee check and file preflight</h3>
+                <p>
+                  Final upload authority should stay limited to approved owners or delegates. This
+                  concept gate validates uploader authority, naming, metadata, sections, revision
+                  controls, and placement rules before release.
+                </p>
+              </div>
+
+              <div class="upload-controls">
+                <label class="field" for="upload-actor">
+                  <span>Authorized uploader</span>
+                  <select id="upload-actor"></select>
+                </label>
+
+                <label class="field" for="upload-file">
+                  <span>Markdown file</span>
+                  <input id="upload-file" type="file" accept=".md,.markdown,text/markdown" />
+                </label>
+              </div>
+
+              <div class="upload-rule-list" id="upload-rule-list"></div>
+
+              <div class="upload-dropzone" id="upload-dropzone">
+                <p class="upload-drop-kicker">Preflight Gate</p>
+                <h3>Choose a markdown file to validate</h3>
+                <p id="upload-drop-copy">
+                  The validator will check filename convention, frontmatter fields, required
+                  sections, upload-control fields, owner authority, supersede handling, and the
+                  branch where the file belongs in the web view.
+                </p>
+              </div>
+            </article>
+
+            <article class="upload-panel">
+              <div class="upload-head">
+                <p class="command-kicker">Validation Report</p>
+                <h3 id="upload-status-title">No file loaded yet</h3>
+                <p id="upload-status-copy">
+                  Select an uploader and a markdown file to see placement guidance, clean-upload
+                  readiness, and the exact mismatches that need correction.
+                </p>
+              </div>
+
+              <div class="upload-status-strip" id="upload-status-strip"></div>
+              <div class="upload-placement-card" id="upload-placement-card"></div>
+
+              <div class="upload-issue-columns">
+                <div class="upload-issues-card">
+                  <h4>Issues</h4>
+                  <ul id="upload-issues-list"></ul>
+                </div>
+
+                <div class="upload-issues-card">
+                  <h4>Fix Path</h4>
+                  <ul id="upload-fixes-list"></ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="platform-guide">
+          <div class="section-heading">
+            <p class="eyebrow">Platform Guide</p>
+            <h2>How to use the platform</h2>
+            <p>
+              Use this view as the day-to-day operating map for finding standards, checking
+              authority, managing training acknowledgement, and preparing clean markdown uploads.
+            </p>
+          </div>
+
+          <div class="guide-layout">
+            <article class="guide-card">
+              <span class="branch-meta">Step 1</span>
+              <h3>Find the right page fast</h3>
+              <p>
+                Start with the branch that matches the kind of truth you need, not the tool you
+                happen to be using.
+              </p>
+              <ul>
+                <li>Use `Cultural Turbine` for mission, pillars, and operating logic.</li>
+                <li>Use `Departments` for role and process ownership.</li>
+                <li>Use `Shared Systems` when the question is tool-specific.</li>
+                <li>Use `Cross-Functional Flows` to understand handoffs.</li>
+              </ul>
+            </article>
+
+            <article class="guide-card">
+              <span class="branch-meta">Step 2</span>
+              <h3>Use search and source authority together</h3>
+              <p>
+                Search helps you find a likely page, but the `Source of Truth` section tells you
+                which system actually owns the live record.
+              </p>
+              <ul>
+                <li>Search by standard, tool, ticket family, or department term.</li>
+                <li>Confirm whether Fusion, Odoo, Jira, Brain, Product Home, or Standard Work owns the record.</li>
+                <li>Follow linked authoritative references instead of duplicating instructions.</li>
+              </ul>
+            </article>
+
+            <article class="guide-card">
+              <span class="branch-meta">Step 3</span>
+              <h3>Track training and sign-offs</h3>
+              <p>
+                `Command Structure` ties standards to leads, crews, and acknowledgement status for
+                revision releases, retraining, and knowledge-drift follow-up.
+              </p>
+              <ul>
+                <li>Use the command structure to see who owns acknowledgement follow-through.</li>
+                <li>Use the dashboard progress bars to see completion by team.</li>
+                <li>Use the sign-off cards to capture group or individual acknowledgement.</li>
+                <li>Leave retraining open until the current revision is acknowledged.</li>
+              </ul>
+            </article>
+
+            <article class="guide-card">
+              <span class="branch-meta">Step 4</span>
+              <h3>Prepare uploads through the gate</h3>
+              <p>
+                `Upload Gate` is the clean-entry checkpoint for new or revised markdown before it
+                should be published into the governed library.
+              </p>
+              <ul>
+                <li>Start from the matching markdown template.</li>
+                <li>Keep the filename aligned to `document_id`.</li>
+                <li>Fill metadata, revision, training-impact, and supersede fields completely.</li>
+                <li>Resolve all blocking validation errors before upload.</li>
+              </ul>
+            </article>
+          </div>
+
+          <article class="guide-operations-card">
+            <div>
+              <p class="command-kicker">Recommended Use</p>
+              <h3>Who should do what in the platform</h3>
+            </div>
+            <div class="guide-operations-grid">
+              <div class="guide-mini-card">
+                <span class="branch-meta">Crew</span>
+                <p>Find the current standard, follow the authoritative reference, and acknowledge revision-driven retraining when assigned.</p>
+              </div>
+              <div class="guide-mini-card">
+                <span class="branch-meta">Leads</span>
+                <p>Own training completion, confirm understanding, and escalate gaps, drift, or outdated standards into the improvement or change-control path.</p>
+              </div>
+              <div class="guide-mini-card">
+                <span class="branch-meta">Owners</span>
+                <p>Maintain page correctness, review cadence, revision control, and supersede handling for the pages they govern.</p>
+              </div>
+              <div class="guide-mini-card">
+                <span class="branch-meta">Uploaders</span>
+                <p>Use only approved templates, pass the gate cleanly, and submit uploads only within delegated authority.</p>
+              </div>
+            </div>
+            <a
+              class="button button-outline"
+              href="./downloads/platform-user-guide.md"
+              download="platform-user-guide.md"
+            >
+              Download platform-user-guide.md
+            </a>
+          </article>
+        </section>
+
+        <section class="section" id="template-hangar">
+          <div class="section-heading">
+            <p class="eyebrow">Template Hangar</p>
+            <h2>Download the markdown template pack</h2>
+            <p>
+              These are portable markdown copies of the governed page templates, staged inside
+              the webpage bundle so they can be downloaded directly for Confluence drafting or
+              local controlled authoring.
+            </p>
+          </div>
+          <div class="template-grid" id="template-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <img class="footer-logo" src="./assets/vape-jet-logo.png" alt="Vape-Jet" />
+          <p>
+            Mission-control concept page for the Vape-Jet Standard Work System. Built as a
+            portable presentation asset for review and refinement.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://vape-jet.com/" target="_blank" rel="noreferrer">Vape-Jet</a>
+          <a href="https://pdx-tech.atlassian.net/" target="_blank" rel="noreferrer">Help Desk</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
