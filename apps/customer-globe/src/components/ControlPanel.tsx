@@ -129,11 +129,10 @@ export default function ControlPanel({
 
   return (
     <aside className="control-panel">
-      <div className="eyebrow">C.A.T.S.</div>
+      <div className="eyebrow">Vape-Jet C.A.T.S.</div>
       <h1>Cannabis Automation Tech Supremacy</h1>
       <p className="lede">
-        Track the Vape-Jet footprint city by city, see where C.A.T.S. is already installed,
-        and turn live fleet presence into proof for the next crew-led demo.
+        Explore the global fleet of Vape-Jet C.A.T.S. and see where it has already landed.
       </p>
 
       <div className="stats-ribbon" aria-label="Fleet summary">
@@ -153,7 +152,7 @@ export default function ControlPanel({
 
       <div className="action-row">
         <a className="primary-cta" href={data.meta.ctaUrl} target="_blank" rel="noreferrer">
-          Book a Demo
+          Book a Test Flight
         </a>
         <button className="ghost-cta" type="button" onClick={() => onCountrySelect(null)}>
           Global View

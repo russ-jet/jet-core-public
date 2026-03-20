@@ -132,12 +132,12 @@ const sampleData: PublicGlobeDataset = {
 };
 
 describe("App", () => {
-  test("filters locations, supports internal search fields, and keeps the Book a Demo CTA wired", async () => {
+  test("filters locations, supports internal search fields, and keeps the primary CTA wired", async () => {
     const user = userEvent.setup();
     render(<App initialData={sampleData} />);
 
     expect(await screen.findByTestId("globe-mode")).toHaveTextContent("global");
-    expect(screen.getAllByRole("link", { name: "Book a Demo" })[0]).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Book a Test Flight" })).toHaveAttribute(
       "href",
       "https://vape-jet.com/contact/",
     );
@@ -157,7 +157,7 @@ describe("App", () => {
     expect(screen.getByText("Internal lookup")).toBeInTheDocument();
     expect(screen.getByText("Northern Crew")).toBeInTheDocument();
     expect(screen.getByText("55 4th Street · T2P")).toBeInTheDocument();
-    expect(screen.getAllByRole("link", { name: "Book a Demo" })[1]).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Book a Demo" })).toHaveAttribute(
       "href",
       "https://vape-jet.com/contact/",
     );
