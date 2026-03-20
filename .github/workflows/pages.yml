@@ -1,8 +1,9 @@
-name: Deploy GitHub Pages
+name: Deploy Cultural Turbine Pages
 
 on:
   push:
     branches:
+      - codex/mission-control
       - codex/where-in-the-world
   workflow_dispatch:
 
@@ -18,12 +19,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/customer-globe
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -35,19 +35,41 @@ jobs:
           cache: npm
           cache-dependency-path: apps/customer-globe/package-lock.json
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Fetch deployment branches
+        run: git fetch origin codex/mission-control codex/where-in-the-world
 
-      - name: Run tests
-        run: npm test
+      - name: Assemble shared Pages site
+        env:
+          MISSION_REF: origin/codex/mission-control
+          AIR_REF: origin/codex/where-in-the-world
+          MISSION_ROOT: ${{ runner.temp }}/mission-control-site
+          AIR_ROOT: ${{ runner.temp }}/where-in-the-world-site
+          PUBLISH_ROOT: ${{ runner.temp }}/publish-site
+        run: |
+          set -euo pipefail
+          mkdir -p "$MISSION_ROOT" "$AIR_ROOT" "$PUBLISH_ROOT"
+          git archive "$MISSION_REF" | tar -x -C "$MISSION_ROOT"
+          git archive "$AIR_REF" | tar -x -C "$AIR_ROOT"
 
-      - name: Build app
-        run: npm run build
+          cd "$AIR_ROOT/apps/customer-globe"
+          npm ci
+          npm test
+          npm run build
+
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude 'README.md' \
+            "$MISSION_ROOT/" "$PUBLISH_ROOT/"
+
+          rsync -a --exclude 'index.html' "$AIR_ROOT/apps/customer-globe/dist/" "$PUBLISH_ROOT/"
+          touch "$PUBLISH_ROOT/.nojekyll"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/customer-globe/dist
+          path: ${{ runner.temp }}/publish-site
 
   deploy:
     environment:
