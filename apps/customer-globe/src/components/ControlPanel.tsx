@@ -129,11 +129,11 @@ export default function ControlPanel({
 
   return (
     <aside className="control-panel">
-      <div className="eyebrow">Mission Control</div>
-      <h1>Orbit the fleet. Show the proof.</h1>
+      <div className="eyebrow">C.A.T.S.</div>
+      <h1>Cannabis Automation Tech Supremacy</h1>
       <p className="lede">
-        Track the Vape-Jet footprint city by city, spotlight where the fleet is active,
-        and route new prospects straight into a crew-led demo.
+        Track the Vape-Jet footprint city by city, see where C.A.T.S. is already installed,
+        and turn live fleet presence into proof for the next crew-led demo.
       </p>
 
       <div className="stats-ribbon" aria-label="Fleet summary">
