@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - codex/mission-control
+      - codex/where-in-the-world
   workflow_dispatch:
 
 permissions:
@@ -16,22 +17,67 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/customer-globe/package-lock.json
+
+      - name: Fetch deployment branches
+        run: git fetch origin codex/mission-control codex/where-in-the-world
+
+      - name: Assemble shared Pages site
+        env:
+          MISSION_REF: origin/codex/mission-control
+          AIR_REF: origin/codex/where-in-the-world
+          MISSION_ROOT: ${{ runner.temp }}/mission-control-site
+          AIR_ROOT: ${{ runner.temp }}/where-in-the-world-site
+          PUBLISH_ROOT: ${{ runner.temp }}/publish-site
+        run: |
+          set -euo pipefail
+          mkdir -p "$MISSION_ROOT" "$AIR_ROOT" "$PUBLISH_ROOT"
+          git archive "$MISSION_REF" | tar -x -C "$MISSION_ROOT"
+          git archive "$AIR_REF" | tar -x -C "$AIR_ROOT"
+
+          cd "$AIR_ROOT/apps/customer-globe"
+          npm ci
+          npm test
+          npm run build
+
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude 'README.md' \
+            "$MISSION_ROOT/" "$PUBLISH_ROOT/"
+
+          rsync -a --exclude 'index.html' "$AIR_ROOT/apps/customer-globe/dist/" "$PUBLISH_ROOT/"
+          touch "$PUBLISH_ROOT/.nojekyll"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/publish-site
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
