@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vape-jet-orbit-globe
+    runtime: static
+    plan: free
+    autoDeploy: true
+    rootDir: apps/customer-globe
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist

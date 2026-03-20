@@ -1,0 +1,3318 @@
+{
+  "locations": {
+    "Adelanto | California | United States": {
+      "label": "Adelanto, California",
+      "lat": 34.5828261,
+      "lon": -117.4140292,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:26.548774+00:00",
+      "score": 100.0
+    },
+    "Adrian | Michigan | United States": {
+      "label": "Adrian, Michigan",
+      "lat": 41.895299,
+      "lon": -84.039815,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:51.406895+00:00",
+      "score": 100.0
+    },
+    "Airway Heights | Washington | United States": {
+      "label": "Airway Heights, Washington",
+      "lat": 47.642975,
+      "lon": -117.5932059,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:45.873227+00:00",
+      "score": 100.0
+    },
+    "Alamogordo | New Mexico | United States": {
+      "label": "Alamogordo, New Mexico",
+      "lat": 32.890216,
+      "lon": -105.961256,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:41.165903+00:00",
+      "score": 100.0
+    },
+    "Albuquerque | New Mexico | United States": {
+      "label": "Albuquerque, New Mexico",
+      "lat": 35.084248,
+      "lon": -106.649241,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:41.983967+00:00",
+      "score": 100.0
+    },
+    "Alvin | Texas | United States": {
+      "label": "Alvin, Texas",
+      "lat": 29.423834,
+      "lon": -95.244078,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:34.058673+00:00",
+      "score": 100.0
+    },
+    "Anaheim | California | United States": {
+      "label": "Anaheim, California",
+      "lat": 33.834492,
+      "lon": -117.915638,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:26.936621+00:00",
+      "score": 100.0
+    },
+    "Anchorage | Alaska | United States": {
+      "label": "Anchorage, Alaska",
+      "lat": 61.216583,
+      "lon": -149.899597,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:17.971824+00:00",
+      "score": 100.0
+    },
+    "Anna | Illinois | United States": {
+      "label": "Anna, Illinois",
+      "lat": 37.462002,
+      "lon": -89.243592,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:13.908220+00:00",
+      "score": 100.0
+    },
+    "Apopka | Florida | United States": {
+      "label": "Apopka, Florida",
+      "lat": 28.677975,
+      "lon": -81.511499,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:01.445678+00:00",
+      "score": 100.0
+    },
+    "Arcata | California | United States": {
+      "label": "Arcata, California",
+      "lat": 40.868186,
+      "lon": -124.090548,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:27.331225+00:00",
+      "score": 100.0
+    },
+    "Arlington | Washington | United States": {
+      "label": "Arlington, Washington",
+      "lat": 48.191311,
+      "lon": -122.126491,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:46.468312+00:00",
+      "score": 100.0
+    },
+    "Ashby | Massachusetts | United States": {
+      "label": "Ashby, Massachusetts",
+      "lat": 42.677578,
+      "lon": -71.820564,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:36.279779+00:00",
+      "score": 100.0
+    },
+    "Athens | Tennessee | United States": {
+      "label": "Athens, Tennessee",
+      "lat": 35.448396,
+      "lon": -84.606903,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:33.670142+00:00",
+      "score": 100.0
+    },
+    "Au Gres | Michigan | United States": {
+      "label": "Au Gres, Michigan",
+      "lat": 44.047025,
+      "lon": -83.694386,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:52.413573+00:00",
+      "score": 100.0
+    },
+    "Auburn | Maine | United States": {
+      "label": "Auburn, Maine",
+      "lat": 44.093789,
+      "lon": -70.231131,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:26.665661+00:00",
+      "score": 100.0
+    },
+    "Auburn | Washington | United States": {
+      "label": "Auburn, Washington",
+      "lat": 47.307522,
+      "lon": -122.22575,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:46.864499+00:00",
+      "score": 100.0
+    },
+    "Aurora | Colorado | United States": {
+      "label": "Aurora, Colorado",
+      "lat": 39.7129336,
+      "lon": -104.8195761,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:49.567514+00:00",
+      "score": 100.0
+    },
+    "Austin | Texas | United States": {
+      "label": "Austin, Texas",
+      "lat": 30.264979,
+      "lon": -97.746598,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:34.464058+00:00",
+      "score": 100.0
+    },
+    "Aventura | Florida | United States": {
+      "label": "Aventura, Florida",
+      "lat": 25.9569697,
+      "lon": -80.1402543,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:01.840112+00:00",
+      "score": 100.0
+    },
+    "Averill Park | New York | United States": {
+      "label": "Averill Park, New York",
+      "lat": 42.63434,
+      "lon": -73.553585,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:45.683500+00:00",
+      "score": 100.0
+    },
+    "Bailey | Colorado | United States": {
+      "label": "Bailey, Colorado",
+      "lat": 39.406045,
+      "lon": -105.478259,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:49.985987+00:00",
+      "score": 100.0
+    },
+    "Baker | Louisiana | United States": {
+      "label": "Baker, Louisiana",
+      "lat": 30.5867095,
+      "lon": -91.1491182,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:25.864308+00:00",
+      "score": 100.0
+    },
+    "Baltimore | Maryland | United States": {
+      "label": "Baltimore, Maryland",
+      "lat": 39.290443,
+      "lon": -76.612333,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:31.077140+00:00",
+      "score": 100.0
+    },
+    "Bangor | Maine | United States": {
+      "label": "Bangor, Maine",
+      "lat": 44.8016017,
+      "lon": -68.7713335,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:27.271048+00:00",
+      "score": 100.0
+    },
+    "Bangor | Michigan | United States": {
+      "label": "Bangor, Michigan",
+      "lat": 42.3139752,
+      "lon": -86.11395,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:52.794542+00:00",
+      "score": 100.0
+    },
+    "Batavia | New York | United States": {
+      "label": "Batavia, New York",
+      "lat": 42.99691,
+      "lon": -78.186028,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:46.088722+00:00",
+      "score": 100.0
+    },
+    "Bayside | New York | United States": {
+      "label": "Bayside, New York",
+      "lat": 40.76844,
+      "lon": -73.77708,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:46.655584+00:00",
+      "score": 100.0
+    },
+    "Beaverton | Oregon | United States": {
+      "label": "Beaverton, Oregon",
+      "lat": 45.4865966,
+      "lon": -122.7956134,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:20.823935+00:00",
+      "score": 100.0
+    },
+    "Belgrade | Montana | United States": {
+      "label": "Belgrade, Montana",
+      "lat": 45.776196,
+      "lon": -111.177155,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:22.398343+00:00",
+      "score": 100.0
+    },
+    "Bend | Oregon | United States": {
+      "label": "Bend, Oregon",
+      "lat": 44.0580883,
+      "lon": -121.3151497,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:21.226904+00:00",
+      "score": 100.0
+    },
+    "Berwick | Maine | United States": {
+      "label": "Berwick, Maine",
+      "lat": 43.267893,
+      "lon": -70.861764,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:28.268537+00:00",
+      "score": 100.0
+    },
+    "Bethel | Minnesota | United States": {
+      "label": "Bethel, Minnesota",
+      "lat": 45.402005,
+      "lon": -93.270056,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:11.026036+00:00",
+      "score": 100.0
+    },
+    "Biddeford | Maine | United States": {
+      "label": "Biddeford, Maine",
+      "lat": 43.482944,
+      "lon": -70.471358,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:28.683782+00:00",
+      "score": 100.0
+    },
+    "Billings | Montana | United States": {
+      "label": "Billings, Montana",
+      "lat": 45.78265,
+      "lon": -108.504578,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:22.799498+00:00",
+      "score": 100.0
+    },
+    "Bixby | Oklahoma | United States": {
+      "label": "Bixby, Oklahoma",
+      "lat": 35.942372,
+      "lon": -95.883173,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:09.458133+00:00",
+      "score": 100.0
+    },
+    "Bloomfield | Connecticut | United States": {
+      "label": "Bloomfield, Connecticut",
+      "lat": 41.830957,
+      "lon": -72.737425,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:56.819124+00:00",
+      "score": 100.0
+    },
+    "Boonton | New Jersey | United States": {
+      "label": "Boonton, New Jersey",
+      "lat": 40.9055294,
+      "lon": -74.4121589,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:31.336997+00:00",
+      "score": 100.0
+    },
+    "Boston | Massachusetts | United States": {
+      "label": "Boston, Massachusetts",
+      "lat": 42.3589942,
+      "lon": -71.0586293,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:36.670745+00:00",
+      "score": 100.0
+    },
+    "Bozeman | Montana | United States": {
+      "label": "Bozeman, Montana",
+      "lat": 45.679294,
+      "lon": -111.046611,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:23.406195+00:00",
+      "score": 100.0
+    },
+    "Bridgehampton | New York | United States": {
+      "label": "Bridgehampton, New York",
+      "lat": 40.937407,
+      "lon": -72.305608,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:47.682222+00:00",
+      "score": 100.0
+    },
+    "Bridport | Vermont | United States": {
+      "label": "Bridport, Vermont",
+      "lat": 43.9850237,
+      "lon": -73.313413,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:30.364462+00:00",
+      "score": 100.0
+    },
+    "Bristol | Connecticut | United States": {
+      "label": "Bristol, Connecticut",
+      "lat": 41.6729974,
+      "lon": -72.9457618,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:57.375266+00:00",
+      "score": 100.0
+    },
+    "Brockton | Massachusetts | United States": {
+      "label": "Brockton, Massachusetts",
+      "lat": 42.083299,
+      "lon": -71.019903,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:37.667575+00:00",
+      "score": 100.0
+    },
+    "Broken Arrow | Oklahoma | United States": {
+      "label": "Broken Arrow, Oklahoma",
+      "lat": 36.052449,
+      "lon": -95.790808,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:10.466074+00:00",
+      "score": 100.0
+    },
+    "Brooklyn | New York | United States": {
+      "label": "Brooklyn, New York",
+      "lat": 40.692529,
+      "lon": -73.990996,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:48.669903+00:00",
+      "score": 100.0
+    },
+    "Bryson City | North Carolina | United States": {
+      "label": "Bryson City, North Carolina",
+      "lat": 35.4266941,
+      "lon": -83.4464728,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:57.452174+00:00",
+      "score": 100.0
+    },
+    "Buchanan | Michigan | United States": {
+      "label": "Buchanan, Michigan",
+      "lat": 41.827366,
+      "lon": -86.359548,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:53.790014+00:00",
+      "score": 100.0
+    },
+    "Buena | New Jersey | United States": {
+      "label": "Buena, New Jersey",
+      "lat": 39.521227,
+      "lon": -74.94822,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:12.070238+00:00",
+      "score": 100.0
+    },
+    "Burford | Ontario | Canada": {
+      "label": "Burford, Ontario",
+      "lat": 43.10292,
+      "lon": -80.42869,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:43:27.274566+00:00",
+      "score": 100.0
+    },
+    "Burlington | Connecticut | United States": {
+      "label": "Burlington, Connecticut",
+      "lat": 41.769828,
+      "lon": -72.962087,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:57.805958+00:00",
+      "score": 100.0
+    },
+    "Burton | Michigan | United States": {
+      "label": "Burton, Michigan",
+      "lat": 42.997779,
+      "lon": -83.62442,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:54.800687+00:00",
+      "score": 100.0
+    },
+    "Butte | Montana | United States": {
+      "label": "Butte, Montana",
+      "lat": 46.01284,
+      "lon": -112.535583,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:23.802170+00:00",
+      "score": 100.0
+    },
+    "CLearwater | Florida | United States": {
+      "label": "Clearwater, Florida",
+      "lat": 27.963991,
+      "lon": -82.799957,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:02.856159+00:00",
+      "score": 100.0
+    },
+    "COLDSTREAM | British Columbia | Canada": {
+      "label": "Coldstream, British Columbia",
+      "lat": 50.223923,
+      "lon": -119.230096,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:10.716375+00:00",
+      "score": 100.0
+    },
+    "Calgary | Alberta | Canada": {
+      "label": "Calgary, Alberta",
+      "lat": 51.045113,
+      "lon": -114.057141,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:10.338769+00:00",
+      "score": 100.0
+    },
+    "Cambridge | Maryland | United States": {
+      "label": "Cambridge, Maryland",
+      "lat": 38.56177,
+      "lon": -76.076001,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:31.481360+00:00",
+      "score": 100.0
+    },
+    "Cameron | Missouri | United States": {
+      "label": "Cameron, Missouri",
+      "lat": 39.741205,
+      "lon": -94.23583,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:10.032766+00:00",
+      "score": 100.0
+    },
+    "Canby | Oregon | United States": {
+      "label": "Canby, Oregon",
+      "lat": 45.2622871,
+      "lon": -122.6921613,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:21.814484+00:00",
+      "score": 100.0
+    },
+    "Canoga Park | California | United States": {
+      "label": "Canoga Park, Los Angeles, California",
+      "lat": 34.20112,
+      "lon": -118.59814,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:27.747360+00:00",
+      "score": 100.0
+    },
+    "Canton | North Carolina | United States": {
+      "label": "Canton, North Carolina",
+      "lat": 35.5343954,
+      "lon": -82.8314891,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:57.860730+00:00",
+      "score": 100.0
+    },
+    "Cape Town | Western Cape | South Africa": {
+      "label": "Cape Town, Western Cape, South Africa",
+      "lat": -33.9249,
+      "lon": 18.4241,
+      "provider": "manual",
+      "resolvedAt": "2026-03-19T03:04:10.578096+00:00",
+      "score": 100.0
+    },
+    "Capitol Heights | Maryland | United States": {
+      "label": "Capitol Heights, Maryland",
+      "lat": 38.884984,
+      "lon": -76.915863,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:32.480686+00:00",
+      "score": 100.0
+    },
+    "Captain Cook | Hawaii | United States": {
+      "label": "Captain Cook, Hawaii",
+      "lat": 19.4944421,
+      "lon": -155.9146786,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:12.741644+00:00",
+      "score": 100.0
+    },
+    "Centerville | Utah | United States": {
+      "label": "Centerville, Utah",
+      "lat": 40.921499,
+      "lon": -111.878961,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:39.205817+00:00",
+      "score": 100.0
+    },
+    "Centreville | Maryland | United States": {
+      "label": "Centreville, Maryland",
+      "lat": 39.045049,
+      "lon": -76.064683,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:32.903751+00:00",
+      "score": 100.0
+    },
+    "Chatsworth | California | United States": {
+      "label": "Chatsworth, Los Angeles, California",
+      "lat": 34.257217,
+      "lon": -118.60606,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:28.157617+00:00",
+      "score": 100.0
+    },
+    "Chesaning | Michigan | United States": {
+      "label": "Chesaning, Michigan",
+      "lat": 43.184651,
+      "lon": -84.115371,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:55.196823+00:00",
+      "score": 100.0
+    },
+    "Chestertown | Maryland | United States": {
+      "label": "Chestertown, Maryland",
+      "lat": 39.211199,
+      "lon": -76.06576,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:12.479467+00:00",
+      "score": 100.0
+    },
+    "Chestertown | New York | United States": {
+      "label": "Chestertown, New York",
+      "lat": 43.652807,
+      "lon": -73.800757,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:12.904674+00:00",
+      "score": 100.0
+    },
+    "Cheswick | Pennsylvania | United States": {
+      "label": "Cheswick, Pennsylvania",
+      "lat": 40.541545,
+      "lon": -79.79932,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:27.672663+00:00",
+      "score": 100.0
+    },
+    "Chicago | Illinois | United States": {
+      "label": "Chicago, Illinois",
+      "lat": 41.883229,
+      "lon": -87.632398,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:14.539302+00:00",
+      "score": 100.0
+    },
+    "Chickasha | Oklahoma | United States": {
+      "label": "Chickasha, Oklahoma",
+      "lat": 35.04759,
+      "lon": -97.936929,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:10.853246+00:00",
+      "score": 100.0
+    },
+    "Choctaw | Oklahoma | United States": {
+      "label": "Choctaw, Oklahoma",
+      "lat": 35.493121,
+      "lon": -97.272227,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:11.460512+00:00",
+      "score": 100.0
+    },
+    "Cincinnati | Ohio | United States": {
+      "label": "Cincinnati, Ohio",
+      "lat": 39.12711,
+      "lon": -84.51439,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:00.502645+00:00",
+      "score": 100.0
+    },
+    "Cinnaminson | New Jersey | United States": {
+      "label": "Cinnaminson, New Jersey",
+      "lat": 39.997716,
+      "lon": -74.993839,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:31.740095+00:00",
+      "score": 100.0
+    },
+    "Citrus Heights | California | United States": {
+      "label": "Citrus Heights, California",
+      "lat": 38.6773568,
+      "lon": -121.30063,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:28.746953+00:00",
+      "score": 100.0
+    },
+    "Clarence | Missouri | United States": {
+      "label": "Clarence, Missouri",
+      "lat": 39.742844,
+      "lon": -92.25821,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:26.608991+00:00",
+      "score": 100.0
+    },
+    "Clearwater | Florida | United States": {
+      "label": "Clearwater, Florida",
+      "lat": 27.963991,
+      "lon": -82.799957,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:03.891677+00:00",
+      "score": 100.0
+    },
+    "Coachella | California | United States": {
+      "label": "Coachella, California",
+      "lat": 33.6840055,
+      "lon": -116.177593,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:29.165088+00:00",
+      "score": 100.0
+    },
+    "Cockeysville | Maryland | United States": {
+      "label": "Cockeysville, Maryland",
+      "lat": 39.474209,
+      "lon": -76.630743,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:33.883225+00:00",
+      "score": 100.0
+    },
+    "Columbia | Maryland | United States": {
+      "label": "Columbia, Maryland",
+      "lat": 39.217524,
+      "lon": -76.868726,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:34.889786+00:00",
+      "score": 100.0
+    },
+    "Columbia | Missouri | United States": {
+      "label": "Columbia, Missouri",
+      "lat": 38.951551,
+      "lon": -92.328594,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:12.031040+00:00",
+      "score": 100.0
+    },
+    "Columbus | Mississippi | United States": {
+      "label": "Columbus, Mississippi",
+      "lat": 33.495562,
+      "lon": -88.424393,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:13.817386+00:00",
+      "score": 100.0
+    },
+    "Columbus | Ohio | United States": {
+      "label": "Columbus, Ohio",
+      "lat": 39.962762,
+      "lon": -82.996291,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:01.089063+00:00",
+      "score": 100.0
+    },
+    "Concord | California | United States": {
+      "label": "Concord, California",
+      "lat": 37.979103,
+      "lon": -122.031333,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:29.604851+00:00",
+      "score": 100.0
+    },
+    "Constantine | Michigan | United States": {
+      "label": "Constantine, Michigan",
+      "lat": 41.842136,
+      "lon": -85.6691267,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:56.194590+00:00",
+      "score": 100.0
+    },
+    "Copake | New York | United States": {
+      "label": "Copake, New York",
+      "lat": 42.103689,
+      "lon": -73.549507,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:27.632816+00:00",
+      "score": 100.0
+    },
+    "Corpus Cisty | Texas | United States": {
+      "label": "Corpus",
+      "lat": 27.776384,
+      "lon": -97.451747,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:35.011657+00:00",
+      "score": 89.29
+    },
+    "Cortland | New York | United States": {
+      "label": "Cortland, New York",
+      "lat": 42.601213,
+      "lon": -76.180483,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:49.560882+00:00",
+      "score": 100.0
+    },
+    "Coshocton | Ohio | United States": {
+      "label": "Coshocton, Ohio",
+      "lat": 40.269647,
+      "lon": -81.850516,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:02.116239+00:00",
+      "score": 100.0
+    },
+    "Costa Mesa | California | United States": {
+      "label": "Costa Mesa, California",
+      "lat": 33.663857,
+      "lon": -117.904765,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:30.016920+00:00",
+      "score": 100.0
+    },
+    "Costa mesa | California | United States": {
+      "label": "Costa Mesa, California",
+      "lat": 33.663857,
+      "lon": -117.904765,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:31.019784+00:00",
+      "score": 100.0
+    },
+    "Cotton Plant | Arkansas | United States": {
+      "label": "Cotton Plant, Arkansas",
+      "lat": 35.004611,
+      "lon": -91.250921,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:24.570735+00:00",
+      "score": 100.0
+    },
+    "Cranbury | New Jersey | United States": {
+      "label": "Cranbury, New Jersey",
+      "lat": 40.3131225,
+      "lon": -74.5153085,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:14.232989+00:00",
+      "score": 100.0
+    },
+    "Cuba | Missouri | United States": {
+      "label": "Cuba, Missouri",
+      "lat": 38.0627032,
+      "lon": -91.4002103,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:13.029302+00:00",
+      "score": 100.0
+    },
+    "Dallas | Texas | United States": {
+      "label": "Dallas, Texas",
+      "lat": 32.7779765,
+      "lon": -96.7962148,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:35.417702+00:00",
+      "score": 100.0
+    },
+    "Danville | Virginia | United States": {
+      "label": "Danville, Virginia",
+      "lat": 36.586168,
+      "lon": -79.3952367,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:43.031337+00:00",
+      "score": 100.0
+    },
+    "Dayton | Ohio | United States": {
+      "label": "Dayton, Ohio",
+      "lat": 39.760982,
+      "lon": -84.192203,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:03.106754+00:00",
+      "score": 100.0
+    },
+    "Dearborn | Missouri | United States": {
+      "label": "Dearborn, Missouri",
+      "lat": 39.521949,
+      "lon": -94.769909,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:13.421109+00:00",
+      "score": 100.0
+    },
+    "Deland | Florida | United States": {
+      "label": "DeLand, Florida",
+      "lat": 29.0280928,
+      "lon": -81.2992699,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:04.876709+00:00",
+      "score": 100.0
+    },
+    "Delta | British Columbia | Canada": {
+      "label": "Delta, British Columbia",
+      "lat": 49.089575771,
+      "lon": -123.057303037,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:11.714784+00:00",
+      "score": 100.0
+    },
+    "Denver | Colorado | United States": {
+      "label": "Denver, Colorado",
+      "lat": 39.738453,
+      "lon": -104.984853,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:51.570149+00:00",
+      "score": 100.0
+    },
+    "Desert Hot Springs | California | United States": {
+      "label": "Desert Hot Springs, California",
+      "lat": 33.960912,
+      "lon": -116.5101302,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:32.041467+00:00",
+      "score": 100.0
+    },
+    "Dracut | Massachusetts | United States": {
+      "label": "Dracut, Massachusetts",
+      "lat": 42.668945,
+      "lon": -71.303298,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:38.051108+00:00",
+      "score": 100.0
+    },
+    "Durham | North Carolina | United States": {
+      "label": "Durham, North Carolina",
+      "lat": 35.996948,
+      "lon": -78.899023,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:58.260674+00:00",
+      "score": 100.0
+    },
+    "Earlsboro | Oklahoma | United States": {
+      "label": "Earlsboro, Oklahoma",
+      "lat": 35.267902,
+      "lon": -96.804621,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:11.853887+00:00",
+      "score": 100.0
+    },
+    "Earth City | Missouri | United States": {
+      "label": "Earth City, Missouri",
+      "lat": 38.768604,
+      "lon": -90.467147,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:14.427321+00:00",
+      "score": 100.0
+    },
+    "East Fultonham | Ohio | United States": {
+      "label": "East Fultonham, Ohio",
+      "lat": 39.850038,
+      "lon": -82.123375,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:03.510381+00:00",
+      "score": 100.0
+    },
+    "East Saint Louis | Illinois | United States": {
+      "label": "East Saint Louis, Illinois",
+      "lat": 38.6245,
+      "lon": -90.15094,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:14.948663+00:00",
+      "score": 100.0
+    },
+    "East Wenatchee | Washington | United States": {
+      "label": "East Wenatchee, Washington",
+      "lat": 47.4161802,
+      "lon": -120.2917591,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:47.454665+00:00",
+      "score": 100.0
+    },
+    "Easthampton | Massachusetts | United States": {
+      "label": "Easthampton, Massachusetts",
+      "lat": 42.26547,
+      "lon": -72.669022,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:38.683037+00:00",
+      "score": 100.0
+    },
+    "Eastlake | Ohio | United States": {
+      "label": "Eastlake, Ohio",
+      "lat": 41.68249,
+      "lon": -81.42308,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:04.091947+00:00",
+      "score": 100.0
+    },
+    "Eatontown | New Jersey | United States": {
+      "label": "Eatontown, New Jersey",
+      "lat": 40.3046356,
+      "lon": -74.0597411,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:32.144415+00:00",
+      "score": 100.0
+    },
+    "Edmond | Oklahoma | United States": {
+      "label": "Edmond, Oklahoma",
+      "lat": 35.65314,
+      "lon": -97.481511,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:12.850984+00:00",
+      "score": 100.0
+    },
+    "Elgin | Illinois | United States": {
+      "label": "Elgin, Illinois",
+      "lat": 42.039567,
+      "lon": -88.283975,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:15.926383+00:00",
+      "score": 100.0
+    },
+    "Elizabeth | New Jersey | United States": {
+      "label": "Elizabeth, New Jersey",
+      "lat": 40.6619274,
+      "lon": -74.2116531,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:32.522443+00:00",
+      "score": 100.0
+    },
+    "Elmwood park | New Jersey | United States": {
+      "label": "Elmwood Park, New Jersey",
+      "lat": 40.89959,
+      "lon": -74.115781,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:32.939586+00:00",
+      "score": 100.0
+    },
+    "Enid | Oklahoma | United States": {
+      "label": "Enid, Oklahoma",
+      "lat": 36.393157,
+      "lon": -97.87832,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:13.847570+00:00",
+      "score": 100.0
+    },
+    "Erie | Colorado | United States": {
+      "label": "Erie, Colorado",
+      "lat": 40.051548,
+      "lon": -105.047448,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:23.692008+00:00",
+      "score": 100.0
+    },
+    "Estacada | Oregon | United States": {
+      "label": "Estacada, Oregon",
+      "lat": 45.2896904,
+      "lon": -122.3351189,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:22.220436+00:00",
+      "score": 100.0
+    },
+    "Eugene | Oregon | United States": {
+      "label": "Eugene, Oregon",
+      "lat": 44.052153,
+      "lon": -123.091195,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:22.813983+00:00",
+      "score": 100.0
+    },
+    "Eureka | California | United States": {
+      "label": "Eureka, California",
+      "lat": 40.786143,
+      "lon": -124.161309,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:32.443153+00:00",
+      "score": 100.0
+    },
+    "Ewing Township | New Jersey | United States": {
+      "label": "Ewing Township, New Jersey",
+      "lat": 40.26509,
+      "lon": -74.80058,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:33.399756+00:00",
+      "score": 100.0
+    },
+    "Fairbanks | Alaska | United States": {
+      "label": "Fairbanks, Alaska",
+      "lat": 64.836661,
+      "lon": -147.738891,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:18.974514+00:00",
+      "score": 100.0
+    },
+    "Fairfield | Maine | United States": {
+      "label": "Fairfield, Maine",
+      "lat": 44.590824,
+      "lon": -69.5952352,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:29.104462+00:00",
+      "score": 100.0
+    },
+    "Fairless Hills | Pennsylvania | United States": {
+      "label": "Fairless Hills, Pennsylvania",
+      "lat": 40.177821,
+      "lon": -74.854473,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:28.086429+00:00",
+      "score": 100.0
+    },
+    "Farmingdale | New York | United States": {
+      "label": "Farmingdale, New York",
+      "lat": 40.732911,
+      "lon": -73.445878,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:50.542530+00:00",
+      "score": 100.0
+    },
+    "Flushing | New York | United States": {
+      "label": "Flushing, New York",
+      "lat": 40.761532,
+      "lon": -73.831114,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:14.588597+00:00",
+      "score": 100.0
+    },
+    "Fontana | California | United States": {
+      "label": "Fontana, California",
+      "lat": 34.1028926,
+      "lon": -117.435765,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:32.851142+00:00",
+      "score": 100.0
+    },
+    "Fort Lauderdale | Florida | United States": {
+      "label": "Fort Lauderdale, Florida",
+      "lat": 26.1241631,
+      "lon": -80.1435862,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:24.501341+00:00",
+      "score": 100.0
+    },
+    "Fort Myers | Florida | United States": {
+      "label": "Fort Myers, Florida",
+      "lat": 26.614149,
+      "lon": -81.825769,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:24.091550+00:00",
+      "score": 100.0
+    },
+    "Framingham | Massachusetts | United States": {
+      "label": "Framingham, Massachusetts",
+      "lat": 42.28156,
+      "lon": -71.418825,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:39.050139+00:00",
+      "score": 100.0
+    },
+    "Frederic | Michigan | United States": {
+      "label": "Frederic, Michigan",
+      "lat": 44.7785554,
+      "lon": -84.7543263,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:57.199169+00:00",
+      "score": 100.0
+    },
+    "Frenchtown | Montana | United States": {
+      "label": "Frenchtown, Montana",
+      "lat": 47.0148734,
+      "lon": -114.2300625,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:24.188804+00:00",
+      "score": 100.0
+    },
+    "Galena | Illinois | United States": {
+      "label": "Galena, Illinois",
+      "lat": 42.4167622,
+      "lon": -90.4288636,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:16.300589+00:00",
+      "score": 100.0
+    },
+    "Gallatin Gateway | Montana | United States": {
+      "label": "Gallatin Gateway, Montana",
+      "lat": 45.592139,
+      "lon": -111.199662,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:24.604726+00:00",
+      "score": 100.0
+    },
+    "Garden Grove | California | United States": {
+      "label": "Garden Grove, California",
+      "lat": 33.776069,
+      "lon": -117.937878,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:33.283477+00:00",
+      "score": 100.0
+    },
+    "Garfield Heights | Ohio | United States": {
+      "label": "Garfield Heights, Ohio",
+      "lat": 41.422316,
+      "lon": -81.609878,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:05.116508+00:00",
+      "score": 100.0
+    },
+    "Garfield | New Jersey | United States": {
+      "label": "Garfield, New Jersey",
+      "lat": 40.882481,
+      "lon": -74.108781,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:33.944521+00:00",
+      "score": 100.0
+    },
+    "Gibsonburg | Ohio | United States": {
+      "label": "Gibsonburg, Ohio",
+      "lat": 41.384541,
+      "lon": -83.320019,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:06.097259+00:00",
+      "score": 100.0
+    },
+    "Glasgow | Montana | United States": {
+      "label": "Glasgow, Montana",
+      "lat": 48.195347,
+      "lon": -106.637623,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:25.007589+00:00",
+      "score": 100.0
+    },
+    "Gloversville | New York | United States": {
+      "label": "Gloversville, New York",
+      "lat": 43.050524,
+      "lon": -74.346223,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:50.939553+00:00",
+      "score": 100.0
+    },
+    "Grand Island | New York | United States": {
+      "label": "Grand Island, New York",
+      "lat": 43.036427,
+      "lon": -78.962693,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:51.367092+00:00",
+      "score": 100.0
+    },
+    "Grand Rapids | Michigan | United States": {
+      "label": "Grand Rapids, Michigan",
+      "lat": 42.9654617,
+      "lon": -85.6701714,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:57.600254+00:00",
+      "score": 100.0
+    },
+    "Grants Pass | Oregon | United States": {
+      "label": "Grants Pass, Oregon",
+      "lat": 42.4407359,
+      "lon": -123.3261019,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:23.221317+00:00",
+      "score": 100.0
+    },
+    "Greenfield | California | United States": {
+      "label": "Greenfield, California",
+      "lat": 36.329802,
+      "lon": -121.251041,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:33.689804+00:00",
+      "score": 100.0
+    },
+    "Greenville | South Carolina | United States": {
+      "label": "Greenville, South Carolina",
+      "lat": 34.850746,
+      "lon": -82.398964,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:31.295518+00:00",
+      "score": 100.0
+    },
+    "HASTINGS | Florida | United States": {
+      "label": "Hastings, Florida",
+      "lat": 29.717056,
+      "lon": -81.504868,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:06.715423+00:00",
+      "score": 100.0
+    },
+    "Hagerstown | Maryland | United States": {
+      "label": "Hagerstown, Maryland",
+      "lat": 39.6395843,
+      "lon": -77.7189406,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:35.299699+00:00",
+      "score": 100.0
+    },
+    "Hamilton | New Jersey | United States": {
+      "label": "Hamilton, New Jersey",
+      "lat": 40.207057,
+      "lon": -74.081251,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:34.354972+00:00",
+      "score": 100.0
+    },
+    "Hardy | Virginia | United States": {
+      "label": "Hardy, Virginia",
+      "lat": 37.231691,
+      "lon": -79.811351,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:44.016777+00:00",
+      "score": 100.0
+    },
+    "Harrison Township | Michigan | United States": {
+      "label": "Harrison Township, Michigan",
+      "lat": 42.5876298,
+      "lon": -82.8185404,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:58.009692+00:00",
+      "score": 100.0
+    },
+    "Hastings | Minnesota | United States": {
+      "label": "Hastings, Minnesota",
+      "lat": 44.7422921,
+      "lon": -92.8526464,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:05.833734+00:00",
+      "score": 100.0
+    },
+    "Hauppauge | New York | United States": {
+      "label": "Hauppauge, New York",
+      "lat": 40.829517,
+      "lon": -73.198903,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:51.772511+00:00",
+      "score": 100.0
+    },
+    "Havana | Florida | United States": {
+      "label": "Havana, Florida",
+      "lat": 30.627663,
+      "lon": -84.40986,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:07.111879+00:00",
+      "score": 100.0
+    },
+    "Hazel Park | Michigan | United States": {
+      "label": "Hazel Park, Michigan",
+      "lat": 42.461387,
+      "lon": -83.103989,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:58.411156+00:00",
+      "score": 100.0
+    },
+    "Helena | Montana | United States": {
+      "label": "Helena, Montana",
+      "lat": 46.5910708,
+      "lon": -112.0203973,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:25.593846+00:00",
+      "score": 100.0
+    },
+    "High Point | North Carolina | United States": {
+      "label": "High Point, North Carolina",
+      "lat": 35.953972,
+      "lon": -80.003935,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:58.872317+00:00",
+      "score": 100.0
+    },
+    "Highland | Michigan | United States": {
+      "label": "Highland, Michigan",
+      "lat": 42.637891,
+      "lon": -83.619161,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:58.836861+00:00",
+      "score": 100.0
+    },
+    "Hillsboro | Oregon | United States": {
+      "label": "Hillsboro, Oregon",
+      "lat": 45.52395,
+      "lon": -122.989739,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:23.613121+00:00",
+      "score": 100.0
+    },
+    "Hobbs | New Mexico | United States": {
+      "label": "Hobbs, New Mexico",
+      "lat": 32.700807,
+      "lon": -103.136211,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:42.386946+00:00",
+      "score": 100.0
+    },
+    "Hogansburg | New York | United States": {
+      "label": "Hogansburg, New York",
+      "lat": 44.972464,
+      "lon": -74.663149,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:52.346267+00:00",
+      "score": 100.0
+    },
+    "Holdenville | Oklahoma | United States": {
+      "label": "Holdenville, Oklahoma",
+      "lat": 35.085197,
+      "lon": -96.403711,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:14.238032+00:00",
+      "score": 100.0
+    },
+    "Hollister | California | United States": {
+      "label": "Hollister, California",
+      "lat": 36.852513,
+      "lon": -121.402063,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:34.249727+00:00",
+      "score": 100.0
+    },
+    "Holliston | Massachusetts | United States": {
+      "label": "Holliston, Massachusetts",
+      "lat": 42.20053,
+      "lon": -71.42789,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:39.445178+00:00",
+      "score": 100.0
+    },
+    "Holly | New Jersey | United States": {
+      "label": "Holly St, Jersey City, New Jersey, 07305",
+      "lat": 40.706111491506,
+      "lon": -74.103517503189,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:15.588823+00:00",
+      "score": 88.62
+    },
+    "Hollywood | Florida | United States": {
+      "label": "Hollywood, Florida",
+      "lat": 26.0117574,
+      "lon": -80.1390551,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:07.513029+00:00",
+      "score": 100.0
+    },
+    "Holyoke | Massachusetts | United States": {
+      "label": "Holyoke, Massachusetts",
+      "lat": 42.2018447,
+      "lon": -72.6219159,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:15.933685+00:00",
+      "score": 100.0
+    },
+    "Homewood | Illinois | United States": {
+      "label": "Homewood, Illinois",
+      "lat": 41.563348,
+      "lon": -87.668329,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:16.924874+00:00",
+      "score": 100.0
+    },
+    "Hot Springs | Arkansas | United States": {
+      "label": "Hot Springs, Arkansas",
+      "lat": 34.502785,
+      "lon": -93.055659,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:25.002807+00:00",
+      "score": 100.0
+    },
+    "Hudson | Massachusetts | United States": {
+      "label": "Hudson, Massachusetts",
+      "lat": 42.391157,
+      "lon": -71.568104,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:39.821710+00:00",
+      "score": 100.0
+    },
+    "Humacao | Puerto Rico | Puerto Rico": {
+      "label": "Humacao",
+      "lat": 18.133231836637,
+      "lon": -65.787793048079,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:16.182760+00:00",
+      "score": 100.0
+    },
+    "Humansville | Missouri | United States": {
+      "label": "Humansville, Missouri",
+      "lat": 37.7954888,
+      "lon": -93.5756407,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:14.803207+00:00",
+      "score": 100.0
+    },
+    "Huntington Station | New York | United States": {
+      "label": "Huntington Station, New York",
+      "lat": 40.848403,
+      "lon": -73.411525,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:28.659809+00:00",
+      "score": 100.0
+    },
+    "Huntley | Illinois | United States": {
+      "label": "Huntley, Illinois",
+      "lat": 42.16836,
+      "lon": -88.42906,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:17.304927+00:00",
+      "score": 100.0
+    },
+    "Huron | Ohio | United States": {
+      "label": "Huron, Ohio",
+      "lat": 41.39118,
+      "lon": -82.558093,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:07.084259+00:00",
+      "score": 100.0
+    },
+    "Independence | Missouri | United States": {
+      "label": "Independence, Missouri",
+      "lat": 39.092752,
+      "lon": -94.414913,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:15.804716+00:00",
+      "score": 100.0
+    },
+    "Iowa City | Iowa | United States": {
+      "label": "Iowa City, Iowa",
+      "lat": 41.6612397,
+      "lon": -91.5301283,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:23.485920+00:00",
+      "score": 100.0
+    },
+    "Irvine | California | United States": {
+      "label": "Irvine, California",
+      "lat": 33.685908,
+      "lon": -117.824719,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:34.653250+00:00",
+      "score": 100.0
+    },
+    "Irving | Texas | United States": {
+      "label": "Irving, Texas",
+      "lat": 32.813879,
+      "lon": -96.949933,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:35.814514+00:00",
+      "score": 100.0
+    },
+    "Isleton | California | United States": {
+      "label": "Isleton, California",
+      "lat": 38.162422,
+      "lon": -121.609203,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:35.059457+00:00",
+      "score": 100.0
+    },
+    "Jackson | Michigan | United States": {
+      "label": "Jackson, Michigan",
+      "lat": 42.247454,
+      "lon": -84.408847,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:59.227350+00:00",
+      "score": 100.0
+    },
+    "Jacksonville | Florida | United States": {
+      "label": "Jacksonville, Florida",
+      "lat": 30.325968,
+      "lon": -81.65676,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:07.919698+00:00",
+      "score": 100.0
+    },
+    "Jamestown | New York | United States": {
+      "label": "Jamestown, New York",
+      "lat": 42.098961,
+      "lon": -79.242051,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:53.353597+00:00",
+      "score": 100.0
+    },
+    "Jonesville | Michigan | United States": {
+      "label": "Jonesville, Michigan",
+      "lat": 41.9839595,
+      "lon": -84.6616384,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:00.241384+00:00",
+      "score": 100.0
+    },
+    "Junction City | California | United States": {
+      "label": "Junction City, California",
+      "lat": 40.7300571,
+      "lon": -123.0547449,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:36.080808+00:00",
+      "score": 100.0
+    },
+    "Kansas City | Missouri | United States": {
+      "label": "Kansas City, Missouri",
+      "lat": 39.099792,
+      "lon": -94.578559,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:16.804441+00:00",
+      "score": 100.0
+    },
+    "Kelowna | British Columbia | Canada": {
+      "label": "Kelowna, British Columbia",
+      "lat": 49.888018,
+      "lon": -119.495451,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:12.094955+00:00",
+      "score": 100.0
+    },
+    "Ketchikan | Alaska | United States": {
+      "label": "Ketchikan, Alaska",
+      "lat": 55.3419424,
+      "lon": -131.6427601,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:19.972595+00:00",
+      "score": 100.0
+    },
+    "Kunia Camp | Hawaii | United States": {
+      "label": "Kunia Camp, Hawaii",
+      "lat": 21.459106,
+      "lon": -158.061151,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:13.152601+00:00",
+      "score": 100.0
+    },
+    "Lafayette | Colorado | United States": {
+      "label": "Lafayette, Colorado",
+      "lat": 39.994276,
+      "lon": -105.090455,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:52.572023+00:00",
+      "score": 100.0
+    },
+    "Lafayette | New Jersey | United States": {
+      "label": "Lafayette, New Jersey",
+      "lat": 41.0983023,
+      "lon": -74.6890743,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:34.754477+00:00",
+      "score": 100.0
+    },
+    "Lake Orion | Michigan | United States": {
+      "label": "Lake Orion, Michigan",
+      "lat": 42.784602,
+      "lon": -83.242443,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:01.236231+00:00",
+      "score": 100.0
+    },
+    "Lake Wales | Florida | United States": {
+      "label": "Lake Wales, Florida",
+      "lat": 27.901237,
+      "lon": -81.586277,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:08.520889+00:00",
+      "score": 100.0
+    },
+    "Lakewood | California | United States": {
+      "label": "Lakewood, California",
+      "lat": 33.850448,
+      "lon": -118.133773,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:36.500845+00:00",
+      "score": 100.0
+    },
+    "Lantzville | British Columbia | Canada": {
+      "label": "Lantzville, British Columbia",
+      "lat": 49.230451249,
+      "lon": -124.101045442,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:13.088308+00:00",
+      "score": 100.0
+    },
+    "Las Cruces | New Mexico | United States": {
+      "label": "Las Cruces, New Mexico",
+      "lat": 32.3161471,
+      "lon": -106.780637,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:42.798860+00:00",
+      "score": 100.0
+    },
+    "Las Vegas | Nevada | United States": {
+      "label": "Las Vegas, Nevada",
+      "lat": 36.1690921,
+      "lon": -115.1405767,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:29.962504+00:00",
+      "score": 100.0
+    },
+    "Lauderdale Lakes | Florida | United States": {
+      "label": "Lauderdale Lakes, Florida",
+      "lat": 26.16856,
+      "lon": -80.2062,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:16.938012+00:00",
+      "score": 100.0
+    },
+    "Lee | Massachusetts | United States": {
+      "label": "Lee, Massachusetts",
+      "lat": 42.304401,
+      "lon": -73.246893,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:40.201678+00:00",
+      "score": 100.0
+    },
+    "Lemitar | New Mexico | United States": {
+      "label": "Lemitar, New Mexico",
+      "lat": 34.159894,
+      "lon": -106.907052,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:43.254120+00:00",
+      "score": 100.0
+    },
+    "Little Rock | Arkansas | United States": {
+      "label": "Little Rock, Arkansas",
+      "lat": 34.748745,
+      "lon": -92.275105,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:25.538093+00:00",
+      "score": 100.0
+    },
+    "Littleton | Massachusetts | United States": {
+      "label": "Littleton, Massachusetts",
+      "lat": 42.53706,
+      "lon": -71.510921,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:40.825324+00:00",
+      "score": 100.0
+    },
+    "Log Lane Village | Colorado | United States": {
+      "label": "Log Lane Village, Colorado",
+      "lat": 40.270855,
+      "lon": -103.829678,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:52.998369+00:00",
+      "score": 100.0
+    },
+    "London | Kentucky | United States": {
+      "label": "London, Kentucky",
+      "lat": 37.128849,
+      "lon": -84.083677,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:24.861416+00:00",
+      "score": 100.0
+    },
+    "Long Beach | California | United States": {
+      "label": "Long Beach, California",
+      "lat": 33.771712,
+      "lon": -118.181311,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:36.919633+00:00",
+      "score": 100.0
+    },
+    "Longview | Washington | United States": {
+      "label": "Longview, Washington",
+      "lat": 46.138515,
+      "lon": -122.938132,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:47.872334+00:00",
+      "score": 100.0
+    },
+    "Los Angeles | California | United States": {
+      "label": "Los Angeles, California",
+      "lat": 34.052238,
+      "lon": -118.243344,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:37.527639+00:00",
+      "score": 100.0
+    },
+    "Lowell | Massachusetts | United States": {
+      "label": "Lowell, Massachusetts",
+      "lat": 42.645426,
+      "lon": -71.3074,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:41.829842+00:00",
+      "score": 100.0
+    },
+    "Lower Sackville | Nova Scotia | Canada": {
+      "label": "Lower Sackville, Nova Scotia",
+      "lat": 44.77599,
+      "lon": -63.67865,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:43:26.853990+00:00",
+      "score": 100.0
+    },
+    "Lubbock | Texas | United States": {
+      "label": "Lubbock, Texas",
+      "lat": 33.5836884,
+      "lon": -101.8549534,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:36.407308+00:00",
+      "score": 100.0
+    },
+    "Lucedale | Mississippi | United States": {
+      "label": "Lucedale, Mississippi",
+      "lat": 30.9247544,
+      "lon": -88.5958794,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:09.244949+00:00",
+      "score": 100.0
+    },
+    "Lynwood | California | United States": {
+      "label": "Lynwood, California",
+      "lat": 33.928063,
+      "lon": -118.199166,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:37.915560+00:00",
+      "score": 100.0
+    },
+    "Madera | California | United States": {
+      "label": "Madera, California",
+      "lat": 36.962353,
+      "lon": -120.063486,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:38.493588+00:00",
+      "score": 100.0
+    },
+    "Madison Heights | Michigan | United States": {
+      "label": "Madison Heights, Michigan",
+      "lat": 42.504736,
+      "lon": -83.105747,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:01.665641+00:00",
+      "score": 100.0
+    },
+    "Malaga | Washington | United States": {
+      "label": "Malaga, Washington",
+      "lat": 47.372249,
+      "lon": -120.200084,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:48.866963+00:00",
+      "score": 100.0
+    },
+    "Manistee | Michigan | United States": {
+      "label": "Manistee, Michigan",
+      "lat": 44.2458158,
+      "lon": -86.3195986,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:02.639005+00:00",
+      "score": 100.0
+    },
+    "Mankato | Minnesota | United States": {
+      "label": "Mankato, Minnesota",
+      "lat": 44.1661305,
+      "lon": -94.0054167,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:06.430661+00:00",
+      "score": 100.0
+    },
+    "Marengo | Illinois | United States": {
+      "label": "Marengo, Illinois",
+      "lat": 42.248355,
+      "lon": -88.608483,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:17.696087+00:00",
+      "score": 100.0
+    },
+    "Maryland Heights | Missouri | United States": {
+      "label": "Maryland Heights, Missouri",
+      "lat": 38.7122449,
+      "lon": -90.4682052,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:17.208705+00:00",
+      "score": 100.0
+    },
+    "Maywood | California | United States": {
+      "label": "Maywood, California",
+      "lat": 33.994293,
+      "lon": -118.18904,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:17.283589+00:00",
+      "score": 100.0
+    },
+    "Meadowbrook | Pennsylvania | United States": {
+      "label": "Meadowbrook, Pennsylvania",
+      "lat": 39.872854,
+      "lon": -79.7156,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:18.323634+00:00",
+      "score": 100.0
+    },
+    "Medford | Oregon | United States": {
+      "label": "Medford, Oregon",
+      "lat": 42.326543,
+      "lon": -122.872185,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:18.746837+00:00",
+      "score": 100.0
+    },
+    "Medley | Florida | United States": {
+      "label": "Medley, Florida",
+      "lat": 25.864813,
+      "lon": -80.351395,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:09.504221+00:00",
+      "score": 100.0
+    },
+    "Merlin | Oregon | United States": {
+      "label": "Merlin, Oregon",
+      "lat": 42.5173295,
+      "lon": -123.4234829,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:24.021355+00:00",
+      "score": 100.0
+    },
+    "Miami | Florida | United States": {
+      "label": "Miami, Florida",
+      "lat": 25.775084,
+      "lon": -80.194702,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:09.904187+00:00",
+      "score": 100.0
+    },
+    "Middlebury | Vermont | United States": {
+      "label": "Middlebury, Vermont",
+      "lat": 44.0141854,
+      "lon": -73.166691,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:41.611507+00:00",
+      "score": 100.0
+    },
+    "Milwaukee | Wisconsin | United States": {
+      "label": "Milwaukee, Wisconsin",
+      "lat": 43.041072,
+      "lon": -87.909421,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:56.076244+00:00",
+      "score": 100.0
+    },
+    "Milwaukie | Oregon | United States": {
+      "label": "Milwaukie, Oregon",
+      "lat": 45.4455328,
+      "lon": -122.6416621,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:24.416501+00:00",
+      "score": 100.0
+    },
+    "Minneapolis | Minnesota | United States": {
+      "label": "Minneapolis, Minnesota",
+      "lat": 44.9774859,
+      "lon": -93.2643669,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:06.837705+00:00",
+      "score": 100.0
+    },
+    "Mission | Kansas | United States": {
+      "label": "Mission, Kansas",
+      "lat": 39.011171,
+      "lon": -95.780887,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:23.870285+00:00",
+      "score": 100.0
+    },
+    "Moberly | Missouri | United States": {
+      "label": "Moberly, Missouri",
+      "lat": 39.421755,
+      "lon": -92.433556,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:18.181629+00:00",
+      "score": 100.0
+    },
+    "Modesto | California | United States": {
+      "label": "Modesto, California",
+      "lat": 37.640735,
+      "lon": -121.002435,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:39.481956+00:00",
+      "score": 100.0
+    },
+    "Moffat | Colorado | United States": {
+      "label": "Moffat, Colorado",
+      "lat": 38.003645,
+      "lon": -105.904458,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:53.979740+00:00",
+      "score": 100.0
+    },
+    "Moncton | New Brunswick | Canada": {
+      "label": "Moncton, New Brunswick",
+      "lat": 46.087971,
+      "lon": -64.77714,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:14.448814+00:00",
+      "score": 100.0
+    },
+    "Monroe | Michigan | United States": {
+      "label": "Monroe, Michigan",
+      "lat": 41.9164301,
+      "lon": -83.3975606,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:03.035135+00:00",
+      "score": 100.0
+    },
+    "Monson | Massachusetts | United States": {
+      "label": "Monson, Massachusetts",
+      "lat": 42.1045294,
+      "lon": -72.3180306,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:42.203483+00:00",
+      "score": 100.0
+    },
+    "Mooresville | North Carolina | United States": {
+      "label": "Mooresville, North Carolina",
+      "lat": 35.582567,
+      "lon": -80.812784,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:59.287130+00:00",
+      "score": 100.0
+    },
+    "Murphysboro | Illinois | United States": {
+      "label": "Murphysboro, Illinois",
+      "lat": 37.764296,
+      "lon": -89.335958,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:18.692264+00:00",
+      "score": 100.0
+    },
+    "Murrabit West | Victoria | Australia": {
+      "label": "Murrabit West, Victoria, Australia",
+      "lat": -35.503968,
+      "lon": 143.884505,
+      "provider": "manual",
+      "resolvedAt": "2026-03-20T02:52:35.801896+00:00",
+      "score": 100.0
+    },
+    "NORTHAMPTON | Massachusetts | United States": {
+      "label": "Northampton, Massachusetts",
+      "lat": 42.31952,
+      "lon": -72.629756,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:42.826316+00:00",
+      "score": 100.0
+    },
+    "Naka-Ku, Yokohama | Kanagawa | Japan": {
+      "label": "Naka-Ku, Yokohama, Kanagawa",
+      "lat": 35.44473699,
+      "lon": 139.64217472,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:15.809592+00:00",
+      "score": 100.0
+    },
+    "Nashua | New Hampshire | United States": {
+      "label": "Nashua, New Hampshire",
+      "lat": 42.7578695,
+      "lon": -71.4639503,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:19.103465+00:00",
+      "score": 100.0
+    },
+    "Nashville | North Carolina | United States": {
+      "label": "Nashville, North Carolina",
+      "lat": 35.97451,
+      "lon": -77.965691,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:59.684580+00:00",
+      "score": 100.0
+    },
+    "Nevada City | California | United States": {
+      "label": "Nevada City, California",
+      "lat": 39.262782,
+      "lon": -121.019455,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:39.896775+00:00",
+      "score": 100.0
+    },
+    "New Castle | Delaware | United States": {
+      "label": "New Castle, Delaware",
+      "lat": 39.660656,
+      "lon": -75.56184,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:00.013581+00:00",
+      "score": 100.0
+    },
+    "New Castle | Pennsylvania | United States": {
+      "label": "New Castle, Pennsylvania",
+      "lat": 41.003604,
+      "lon": -80.344422,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:28.656363+00:00",
+      "score": 100.0
+    },
+    "New Westminster | British Columbia | Canada": {
+      "label": "New Westminster, British Columbia",
+      "lat": 49.20686,
+      "lon": -122.911229,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:13.460558+00:00",
+      "score": 100.0
+    },
+    "New Windsor | New York | United States": {
+      "label": "New Windsor, New York",
+      "lat": 41.476662,
+      "lon": -74.023457,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:53.767119+00:00",
+      "score": 100.0
+    },
+    "New York | New York | United States": {
+      "label": "New York",
+      "lat": 40.7130466,
+      "lon": -74.0072301,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:54.773983+00:00",
+      "score": 100.0
+    },
+    "Newton | Massachusetts | United States": {
+      "label": "Newton, Massachusetts",
+      "lat": 42.338028,
+      "lon": -71.211578,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:43.228594+00:00",
+      "score": 100.0
+    },
+    "Newton | New Jersey | United States": {
+      "label": "Newton, New Jersey",
+      "lat": 41.0576728,
+      "lon": -74.7519288,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:35.148088+00:00",
+      "score": 100.0
+    },
+    "Noble | Oklahoma | United States": {
+      "label": "Noble, Oklahoma",
+      "lat": 35.140688,
+      "lon": -97.394651,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:14.858337+00:00",
+      "score": 100.0
+    },
+    "Norfolk | Nebraska | United States": {
+      "label": "Norfolk, Nebraska",
+      "lat": 42.032095,
+      "lon": -97.411869,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:27.952805+00:00",
+      "score": 100.0
+    },
+    "Norman | Oklahoma | United States": {
+      "label": "Norman, Oklahoma",
+      "lat": 35.221051,
+      "lon": -97.445943,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:15.245509+00:00",
+      "score": 100.0
+    },
+    "North Chesterfield | Virginia | United States": {
+      "label": "North Chesterfield, Virginia",
+      "lat": 37.38,
+      "lon": -77.59,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:45.032214+00:00",
+      "score": 100.0
+    },
+    "North Hollywood | California | United States": {
+      "label": "North Hollywood, Los Angeles, California",
+      "lat": 34.17223,
+      "lon": -118.37897,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:19.678895+00:00",
+      "score": 100.0
+    },
+    "North Kansas City | Missouri | United States": {
+      "label": "North Kansas City, Missouri",
+      "lat": 39.141964,
+      "lon": -94.577267,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:18.819494+00:00",
+      "score": 100.0
+    },
+    "North Las Vegas | Nevada | United States": {
+      "label": "North Las Vegas, Nevada",
+      "lat": 36.19585,
+      "lon": -115.114574,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:30.350710+00:00",
+      "score": 100.0
+    },
+    "Northridge | California | United States": {
+      "label": "Northridge, Los Angeles, California",
+      "lat": 34.22834,
+      "lon": -118.53675,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:40.488775+00:00",
+      "score": 100.0
+    },
+    "Oakhurst | New Jersey | United States": {
+      "label": "Oakhurst, New Jersey",
+      "lat": 40.26254,
+      "lon": -74.023691,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:35.748457+00:00",
+      "score": 100.0
+    },
+    "Oakland | California | United States": {
+      "label": "Oakland, California",
+      "lat": 37.804828,
+      "lon": -122.27248,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:40.922099+00:00",
+      "score": 100.0
+    },
+    "Oceanside | California | United States": {
+      "label": "Oceanside, California",
+      "lat": 33.1959061,
+      "lon": -117.3795166,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:41.321101+00:00",
+      "score": 100.0
+    },
+    "Oklahoma City | Oklahoma | United States": {
+      "label": "Oklahoma City, Oklahoma",
+      "lat": 35.468494,
+      "lon": -97.521264,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:16.264517+00:00",
+      "score": 100.0
+    },
+    "Olney | Montana | United States": {
+      "label": "Olney, Montana",
+      "lat": 48.5482424,
+      "lon": -114.5701732,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:26.573099+00:00",
+      "score": 100.0
+    },
+    "Omaha | Nebraska | United States": {
+      "label": "Omaha, Nebraska",
+      "lat": 41.258652,
+      "lon": -95.937195,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:28.948381+00:00",
+      "score": 100.0
+    },
+    "Onamia | Minnesota | United States": {
+      "label": "Onamia, Minnesota",
+      "lat": 46.07035,
+      "lon": -93.666319,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:07.432968+00:00",
+      "score": 100.0
+    },
+    "Onondaga Nation | New York | United States": {
+      "label": "Onondaga Nation",
+      "lat": 42.9713,
+      "lon": -76.1403,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:29.076553+00:00",
+      "score": 100.0
+    },
+    "Ontario | Oregon | United States": {
+      "label": "Ontario, Oregon",
+      "lat": 44.024804,
+      "lon": -116.975703,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:29.618740+00:00",
+      "score": 100.0
+    },
+    "Orange Park | Florida | United States": {
+      "label": "Orange Park, Florida",
+      "lat": 30.1692305,
+      "lon": -81.706698,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:10.308639+00:00",
+      "score": 100.0
+    },
+    "Orange | Massachusetts | United States": {
+      "label": "Orange, Massachusetts",
+      "lat": 42.590801,
+      "lon": -72.309688,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:43.832855+00:00",
+      "score": 100.0
+    },
+    "Orchard Park | New York | United States": {
+      "label": "Orchard Park, New York",
+      "lat": 42.767456,
+      "lon": -78.743906,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:20.678927+00:00",
+      "score": 100.0
+    },
+    "Ordway | Colorado | United States": {
+      "label": "Ordway, Colorado",
+      "lat": 38.2163281,
+      "lon": -103.7527646,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:21.085363+00:00",
+      "score": 100.0
+    },
+    "Oregon City | Oregon | United States": {
+      "label": "Oregon City, Oregon",
+      "lat": 45.357817,
+      "lon": -122.608441,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:25.829507+00:00",
+      "score": 100.0
+    },
+    "Oshkosh | Wisconsin | United States": {
+      "label": "Oshkosh, Wisconsin",
+      "lat": 44.020796,
+      "lon": -88.540014,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:56.675543+00:00",
+      "score": 100.0
+    },
+    "Otsego | Minnesota | United States": {
+      "label": "Otsego, Minnesota",
+      "lat": 45.285116,
+      "lon": -93.590909,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:26.251366+00:00",
+      "score": 100.0
+    },
+    "Oxford | Mississippi | United States": {
+      "label": "Oxford, Mississippi",
+      "lat": 34.3668,
+      "lon": -89.518625,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:09.645374+00:00",
+      "score": 100.0
+    },
+    "Pacoima | California | United States": {
+      "label": "Pacoima, Los Angeles, California",
+      "lat": 34.257607,
+      "lon": -118.419247,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:21.426374+00:00",
+      "score": 100.0
+    },
+    "Palatka | Florida | United States": {
+      "label": "Palatka, Florida",
+      "lat": 29.647203,
+      "lon": -81.651886,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:22.068270+00:00",
+      "score": 100.0
+    },
+    "Payson | Utah | United States": {
+      "label": "Payson, Utah",
+      "lat": 40.042535,
+      "lon": -111.733844,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:39.783729+00:00",
+      "score": 100.0
+    },
+    "Pepeekeo | Hawaii | United States": {
+      "label": "Pepeekeo, Hawaii",
+      "lat": 19.8304239,
+      "lon": -155.104046,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:13.540231+00:00",
+      "score": 100.0
+    },
+    "Perris | California | United States": {
+      "label": "Perris, California",
+      "lat": 33.786558,
+      "lon": -117.228201,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:41.908944+00:00",
+      "score": 100.0
+    },
+    "Pflugerville | Texas | United States": {
+      "label": "Pflugerville, Texas",
+      "lat": 30.439923,
+      "lon": -97.620959,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:37.400809+00:00",
+      "score": 100.0
+    },
+    "Philadelphia | Pennsylvania | United States": {
+      "label": "Philadelphia, Pennsylvania",
+      "lat": 39.9510605,
+      "lon": -75.1656204,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:29.992366+00:00",
+      "score": 100.0
+    },
+    "Phoenix | Arizona | United States": {
+      "label": "Phoenix, Arizona",
+      "lat": 33.448204,
+      "lon": -112.0725848,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:22.751478+00:00",
+      "score": 100.0
+    },
+    "Pinconning | Michigan | United States": {
+      "label": "Pinconning, Michigan",
+      "lat": 43.853372,
+      "lon": -83.96722,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:03.646316+00:00",
+      "score": 100.0
+    },
+    "Pine Bluff | Arkansas | United States": {
+      "label": "Pine Bluff, Arkansas",
+      "lat": 34.221586,
+      "lon": -92.002005,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:22.490873+00:00",
+      "score": 100.0
+    },
+    "Pittsfield | Massachusetts | United States": {
+      "label": "Pittsfield, Massachusetts",
+      "lat": 42.445027,
+      "lon": -73.252804,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:44.239631+00:00",
+      "score": 100.0
+    },
+    "Placitas | New Mexico | United States": {
+      "label": "Placitas, New Mexico",
+      "lat": 35.3091241,
+      "lon": -106.4309547,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:43.796360+00:00",
+      "score": 100.0
+    },
+    "Plainfield | New Jersey | United States": {
+      "label": "Plainfield, New Jersey",
+      "lat": 40.614963,
+      "lon": -74.417332,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:36.152655+00:00",
+      "score": 100.0
+    },
+    "Plainview | New York | United States": {
+      "label": "Plainview, New York",
+      "lat": 40.776415,
+      "lon": -73.468453,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:55.606476+00:00",
+      "score": 100.0
+    },
+    "Planview | Texas | United States": {
+      "label": "Planview",
+      "lat": 30.429,
+      "lon": -97.7534,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:37.817358+00:00",
+      "score": 100.0
+    },
+    "Plymouth | Massachusetts | United States": {
+      "label": "Plymouth, Massachusetts",
+      "lat": 41.95575,
+      "lon": -70.664394,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:44.629216+00:00",
+      "score": 100.0
+    },
+    "Pomona | California | United States": {
+      "label": "Pomona, California",
+      "lat": 34.055118,
+      "lon": -117.750048,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:42.283918+00:00",
+      "score": 100.0
+    },
+    "Ponce | Puerto Rico | Puerto Rico": {
+      "label": "Ponce",
+      "lat": 18.0126282,
+      "lon": -66.6260381,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:16.586986+00:00",
+      "score": 100.0
+    },
+    "Portland | Connecticut | United States": {
+      "label": "Portland, Connecticut",
+      "lat": 41.581345,
+      "lon": -72.634112,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:58.197875+00:00",
+      "score": 100.0
+    },
+    "Portland | Oregon | United States": {
+      "label": "Portland, Oregon",
+      "lat": 45.516018,
+      "lon": -122.681425,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:26.221086+00:00",
+      "score": 100.0
+    },
+    "Presto | Pennsylvania | United States": {
+      "label": "Presto",
+      "lat": 40.374293,
+      "lon": -80.117914,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:29.431892+00:00",
+      "score": 100.0
+    },
+    "Princeton | British Columbia | Canada": {
+      "label": "Princeton, British Columbia",
+      "lat": 49.460438,
+      "lon": -120.507963,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:22.840663+00:00",
+      "score": 100.0
+    },
+    "Providence | Rhode Island | United States": {
+      "label": "Providence, Rhode Island",
+      "lat": 41.824461,
+      "lon": -71.412747,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:30.452536+00:00",
+      "score": 100.0
+    },
+    "Pueblo West | Colorado | United States": {
+      "label": "Pueblo West, Colorado",
+      "lat": 38.322234,
+      "lon": -104.739288,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:54.840965+00:00",
+      "score": 100.0
+    },
+    "Pueblo | Colorado | United States": {
+      "label": "Pueblo, Colorado",
+      "lat": 38.265425,
+      "lon": -104.610415,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:54.414151+00:00",
+      "score": 100.0
+    },
+    "Ramsey | Minnesota | United States": {
+      "label": "Ramsey, Minnesota",
+      "lat": 45.2485388,
+      "lon": -93.4166158,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:08.226574+00:00",
+      "score": 100.0
+    },
+    "Rapid City | South Dakota | United States": {
+      "label": "Rapid City, South Dakota",
+      "lat": 44.0830534,
+      "lon": -103.224442,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:31.707925+00:00",
+      "score": 100.0
+    },
+    "Renton | Washington | United States": {
+      "label": "Renton, Washington",
+      "lat": 47.4746582,
+      "lon": -122.2067903,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:49.271813+00:00",
+      "score": 100.0
+    },
+    "Richmond | Virginia | United States": {
+      "label": "Richmond, Virginia",
+      "lat": 37.540759,
+      "lon": -77.433932,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:45.435641+00:00",
+      "score": 100.0
+    },
+    "Richville | Minnesota | United States": {
+      "label": "Richville, Minnesota",
+      "lat": 46.50685,
+      "lon": -95.6258528,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:08.845395+00:00",
+      "score": 100.0
+    },
+    "Ridgefield | New Jersey | United States": {
+      "label": "Ridgefield, New Jersey",
+      "lat": 40.830437,
+      "lon": -74.01034,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:36.761757+00:00",
+      "score": 100.0
+    },
+    "Rio Rancho | New Mexico | United States": {
+      "label": "Rio Rancho, New Mexico",
+      "lat": 35.3066415,
+      "lon": -106.6769814,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:44.264783+00:00",
+      "score": 100.0
+    },
+    "Riverside | Missouri | United States": {
+      "label": "Riverside, Missouri",
+      "lat": 37.069349,
+      "lon": -93.192389,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:19.214281+00:00",
+      "score": 100.0
+    },
+    "Rochdale | Massachusetts | United States": {
+      "label": "Rochdale, Massachusetts",
+      "lat": 42.195563,
+      "lon": -71.909615,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:45.230100+00:00",
+      "score": 100.0
+    },
+    "Rochester | New York | United States": {
+      "label": "Rochester, New York",
+      "lat": 43.155708,
+      "lon": -77.612547,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:55.999260+00:00",
+      "score": 100.0
+    },
+    "Rock island | Illinois | United States": {
+      "label": "Rock Island, Illinois",
+      "lat": 41.472348,
+      "lon": -90.583568,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:19.732274+00:00",
+      "score": 100.0
+    },
+    "Rockford | Michigan | United States": {
+      "label": "Rockford, Michigan",
+      "lat": 43.119776,
+      "lon": -85.559527,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:04.051089+00:00",
+      "score": 100.0
+    },
+    "Rockville | Maryland | United States": {
+      "label": "Rockville, Maryland",
+      "lat": 39.08418,
+      "lon": -77.1529039,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:35.695620+00:00",
+      "score": 100.0
+    },
+    "Ronan | Montana | United States": {
+      "label": "Ronan, Montana",
+      "lat": 47.529777,
+      "lon": -114.1017535,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:27.581442+00:00",
+      "score": 100.0
+    },
+    "Rosholt | South Dakota | United States": {
+      "label": "Rosholt, South Dakota",
+      "lat": 45.8676238,
+      "lon": -96.7299332,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:32.265834+00:00",
+      "score": 100.0
+    },
+    "Roswell | New Mexico | United States": {
+      "label": "Roswell, New Mexico",
+      "lat": 33.3931306,
+      "lon": -104.5227615,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:45.256214+00:00",
+      "score": 100.0
+    },
+    "Ruston | Louisiana | United States": {
+      "label": "Ruston, Louisiana",
+      "lat": 32.5324656,
+      "lon": -92.6390585,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:26.264608+00:00",
+      "score": 100.0
+    },
+    "Rye | New Hampshire | United States": {
+      "label": "Rye, New Hampshire",
+      "lat": 43.0134648,
+      "lon": -70.7708541,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:30.735489+00:00",
+      "score": 100.0
+    },
+    "SPRINGFIELD | Missouri | United States": {
+      "label": "Springfield, Missouri",
+      "lat": 37.215521,
+      "lon": -93.292361,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:19.619281+00:00",
+      "score": 100.0
+    },
+    "Sacramento | California | United States": {
+      "label": "Sacramento, California",
+      "lat": 38.5769347,
+      "lon": -121.4949523,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:42.662514+00:00",
+      "score": 100.0
+    },
+    "Sacremento | California | United States": {
+      "label": "Sacremento",
+      "lat": 38.645327,
+      "lon": -121.476879,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:43.288901+00:00",
+      "score": 100.0
+    },
+    "Saint Albans | Vermont | United States": {
+      "label": "Saint Albans, Vermont",
+      "lat": 44.81088,
+      "lon": -73.08319,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:42.616503+00:00",
+      "score": 100.0
+    },
+    "Saint Augustine | Florida | United States": {
+      "label": "Saint Augustine, Florida",
+      "lat": 29.89469,
+      "lon": -81.31452,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:53.790882+00:00",
+      "score": 100.0
+    },
+    "Saint Louis | Missouri | United States": {
+      "label": "Saint Louis, Missouri",
+      "lat": 38.635355,
+      "lon": -90.2009855,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:54.186727+00:00",
+      "score": 100.0
+    },
+    "Saint Peters | Missouri | United States": {
+      "label": "Saint Peters, Missouri",
+      "lat": 38.80033,
+      "lon": -90.62651,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:20.010689+00:00",
+      "score": 100.0
+    },
+    "Salamanca | New York | United States": {
+      "label": "Salamanca, New York",
+      "lat": 42.163352,
+      "lon": -78.724161,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:56.613243+00:00",
+      "score": 100.0
+    },
+    "Salem | Oregon | United States": {
+      "label": "Salem, Oregon",
+      "lat": 44.939016,
+      "lon": -123.039307,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:26.832488+00:00",
+      "score": 100.0
+    },
+    "Salt Lake City | Utah | United States": {
+      "label": "Salt Lake City, Utah",
+      "lat": 40.758478,
+      "lon": -111.888142,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:40.231663+00:00",
+      "score": 100.0
+    },
+    "Salt Lake | Utah | United States": {
+      "label": "Salt Lake City, Utah",
+      "lat": 40.758478,
+      "lon": -111.888142,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:23.255102+00:00",
+      "score": 100.0
+    },
+    "San Antonio | Texas | United States": {
+      "label": "San Antonio, Texas",
+      "lat": 29.4251712,
+      "lon": -98.494614,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:38.809295+00:00",
+      "score": 100.0
+    },
+    "San Jacinto | California | United States": {
+      "label": "San Jacinto, California",
+      "lat": 33.7839047,
+      "lon": -116.9588697,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:43.688995+00:00",
+      "score": 100.0
+    },
+    "San Juan | Puerto Rico | Puerto Rico": {
+      "label": "San Juan",
+      "lat": 18.466302,
+      "lon": -66.105229,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:17.008894+00:00",
+      "score": 100.0
+    },
+    "Sand Springs | Oklahoma | United States": {
+      "label": "Sand Springs, Oklahoma",
+      "lat": 36.138456,
+      "lon": -96.10888,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:16.679734+00:00",
+      "score": 100.0
+    },
+    "Sanford | Maine | United States": {
+      "label": "Sanford, Maine",
+      "lat": 43.4407632,
+      "lon": -70.7775168,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:23.598504+00:00",
+      "score": 100.0
+    },
+    "Santa Ana | California | United States": {
+      "label": "Santa Ana, California",
+      "lat": 33.749738,
+      "lon": -117.869781,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:44.303597+00:00",
+      "score": 100.0
+    },
+    "Santa Cruz | California | United States": {
+      "label": "Santa Cruz, California",
+      "lat": 36.9741392,
+      "lon": -122.028804,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:45.305806+00:00",
+      "score": 100.0
+    },
+    "Santa Rosa | California | United States": {
+      "label": "Santa Rosa, California",
+      "lat": 38.439698,
+      "lon": -122.715642,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:45.732651+00:00",
+      "score": 100.0
+    },
+    "Saskatoon | Saskatchewan | Canada": {
+      "label": "Saskatoon, Saskatchewan",
+      "lat": 52.130736,
+      "lon": -106.660152,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:15.449652+00:00",
+      "score": 100.0
+    },
+    "Scarborough | Maine | United States": {
+      "label": "Scarborough, Maine",
+      "lat": 43.595891,
+      "lon": -70.325633,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:29.676285+00:00",
+      "score": 100.0
+    },
+    "Seattle | Washington | United States": {
+      "label": "Seattle, Washington",
+      "lat": 47.603229,
+      "lon": -122.33028,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:50.280065+00:00",
+      "score": 100.0
+    },
+    "Sebastopol | California | United States": {
+      "label": "Sebastopol, California",
+      "lat": 38.402084,
+      "lon": -122.824191,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:46.122181+00:00",
+      "score": 100.0
+    },
+    "Sequim | Washington | United States": {
+      "label": "Sequim, Washington",
+      "lat": 48.0778433,
+      "lon": -123.1076854,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:50.693906+00:00",
+      "score": 100.0
+    },
+    "Shelton | Washington | United States": {
+      "label": "Shelton, Washington",
+      "lat": 47.21333,
+      "lon": -123.1060853,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:51.750557+00:00",
+      "score": 100.0
+    },
+    "Signal Hill | California | United States": {
+      "label": "Signal Hill, California",
+      "lat": 33.79712,
+      "lon": -118.16836,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:47.131212+00:00",
+      "score": 100.0
+    },
+    "Silvis | Illinois | United States": {
+      "label": "Silvis, Illinois",
+      "lat": 41.512232,
+      "lon": -90.415628,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:20.096574+00:00",
+      "score": 100.0
+    },
+    "Sitka | Alaska | United States": {
+      "label": "Sitka, Alaska",
+      "lat": 57.05238,
+      "lon": -135.334436,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:20.340419+00:00",
+      "score": 100.0
+    },
+    "Smiths Falls | Ontario | Canada": {
+      "label": "Smiths Falls, Ontario",
+      "lat": 44.90259,
+      "lon": -76.020999,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:14.812786+00:00",
+      "score": 100.0
+    },
+    "Somerdale | New Jersey | United States": {
+      "label": "Somerdale, New Jersey",
+      "lat": 39.8442589,
+      "lon": -75.0182114,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:37.758219+00:00",
+      "score": 100.0
+    },
+    "Somerville | Massachusetts | United States": {
+      "label": "Somerville, Massachusetts",
+      "lat": 42.389121,
+      "lon": -71.097145,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:45.616838+00:00",
+      "score": 100.0
+    },
+    "South Plainfield | New Jersey | United States": {
+      "label": "South Plainfield, New Jersey",
+      "lat": 40.584157,
+      "lon": -74.415544,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:38.770563+00:00",
+      "score": 100.0
+    },
+    "South Seattle | Washington | United States": {
+      "label": "South Seattle, Washington",
+      "lat": 47.563517,
+      "lon": -122.313514,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:52.741452+00:00",
+      "score": 100.0
+    },
+    "Spokane | Washington | United States": {
+      "label": "Spokane, Washington",
+      "lat": 47.6589989,
+      "lon": -117.4250224,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:53.739661+00:00",
+      "score": 100.0
+    },
+    "Springfield | Illinois | United States": {
+      "label": "Springfield, Illinois",
+      "lat": 39.79936,
+      "lon": -89.643624,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:20.496205+00:00",
+      "score": 100.0
+    },
+    "Springfield | Missouri | United States": {
+      "label": "Springfield, Missouri",
+      "lat": 37.215521,
+      "lon": -93.292361,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:20.418862+00:00",
+      "score": 100.0
+    },
+    "Springfield | Ohio | United States": {
+      "label": "Springfield, Ohio",
+      "lat": 39.924581,
+      "lon": -83.810137,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:07.492453+00:00",
+      "score": 100.0
+    },
+    "St. Louis | Missouri | United States": {
+      "label": "St. Louis, Missouri",
+      "lat": 38.635355,
+      "lon": -90.2009855,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:21.413477+00:00",
+      "score": 100.0
+    },
+    "Steamboat Springs | Colorado | United States": {
+      "label": "Steamboat Springs, Colorado",
+      "lat": 40.485489,
+      "lon": -106.833557,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:55.415226+00:00",
+      "score": 100.0
+    },
+    "Sterling | Connecticut | United States": {
+      "label": "Sterling, Connecticut",
+      "lat": 41.707458,
+      "lon": -71.8290673,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:59.197875+00:00",
+      "score": 100.0
+    },
+    "Stilwell | Oklahoma | United States": {
+      "label": "Stilwell, Oklahoma",
+      "lat": 35.8145298,
+      "lon": -94.628465,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:17.663107+00:00",
+      "score": 100.0
+    },
+    "Stone Mountain | Georgia | United States": {
+      "label": "Stone Mountain, Georgia",
+      "lat": 33.804824,
+      "lon": -84.172441,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:12.358345+00:00",
+      "score": 100.0
+    },
+    "Stoughton | Massachusetts | United States": {
+      "label": "Stoughton, Massachusetts",
+      "lat": 42.1255992,
+      "lon": -71.1021646,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:46.234341+00:00",
+      "score": 100.0
+    },
+    "Sulphur | Oklahoma | United States": {
+      "label": "Sulphur, Oklahoma",
+      "lat": 34.51194,
+      "lon": -96.968414,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:18.654970+00:00",
+      "score": 100.0
+    },
+    "Sun Valley | California | United States": {
+      "label": "Sun Valley, Los Angeles, California",
+      "lat": 34.225094,
+      "lon": -118.377008,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:48.144158+00:00",
+      "score": 100.0
+    },
+    "Sunny Isles Beach | Florida | United States": {
+      "label": "Sunny Isles Beach, Florida",
+      "lat": 25.938478,
+      "lon": -80.121573,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:23.948622+00:00",
+      "score": 100.0
+    },
+    "Tacoma | Washington | United States": {
+      "label": "Tacoma, Washington",
+      "lat": 47.25308,
+      "lon": -122.44153,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:54.762971+00:00",
+      "score": 100.0
+    },
+    "Taunton | Massachusetts | United States": {
+      "label": "Taunton, Massachusetts",
+      "lat": 41.9016827,
+      "lon": -71.0926508,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:46.623626+00:00",
+      "score": 100.0
+    },
+    "Tavares | Florida | United States": {
+      "label": "Tavares, Florida",
+      "lat": 28.805161,
+      "lon": -81.732314,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:55:25.874709+00:00",
+      "score": 100.0
+    },
+    "Tekonsha | Michigan | United States": {
+      "label": "Tekonsha, Michigan",
+      "lat": 42.0959989,
+      "lon": -84.9886343,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:04.431557+00:00",
+      "score": 100.0
+    },
+    "Tempe | Arizona | United States": {
+      "label": "Tempe, Arizona",
+      "lat": 33.4255215,
+      "lon": -111.9412528,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:23.762155+00:00",
+      "score": 100.0
+    },
+    "Thousand Oaks | California | United States": {
+      "label": "Thousand Oaks, California",
+      "lat": 34.176083,
+      "lon": -118.848743,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:48.550047+00:00",
+      "score": 100.0
+    },
+    "Tigard | Oregon | United States": {
+      "label": "Tigard, Oregon",
+      "lat": 45.426438,
+      "lon": -122.766201,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:24.354363+00:00",
+      "score": 100.0
+    },
+    "Tilton | Illinois | United States": {
+      "label": "Tilton, Illinois",
+      "lat": 40.089785,
+      "lon": -87.637613,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:20.874489+00:00",
+      "score": 100.0
+    },
+    "Topsham | Maine | United States": {
+      "label": "Topsham, Maine",
+      "lat": 43.9362501,
+      "lon": -69.9680221,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:30.089891+00:00",
+      "score": 100.0
+    },
+    "Tucson | Arizona | United States": {
+      "label": "Tucson, Arizona",
+      "lat": 32.221878,
+      "lon": -110.971225,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:24.143568+00:00",
+      "score": 100.0
+    },
+    "Tulsa | Oklahoma | United States": {
+      "label": "Tulsa, Oklahoma",
+      "lat": 36.155327,
+      "lon": -95.992083,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:19.660019+00:00",
+      "score": 100.0
+    },
+    "Tumwater | Washington | United States": {
+      "label": "Tumwater, Washington",
+      "lat": 46.985404,
+      "lon": -122.911681,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:55.179433+00:00",
+      "score": 100.0
+    },
+    "Tustin | California | United States": {
+      "label": "Tustin, California",
+      "lat": 33.7420715,
+      "lon": -117.8197731,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:48.944997+00:00",
+      "score": 100.0
+    },
+    "Tyrone | Oklahoma | United States": {
+      "label": "Tyrone, Oklahoma",
+      "lat": 36.953259,
+      "lon": -101.067836,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:20.050247+00:00",
+      "score": 100.0
+    },
+    "Uxbridge | Massachusetts | United States": {
+      "label": "Uxbridge, Massachusetts",
+      "lat": 42.077108,
+      "lon": -71.630076,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:47.623058+00:00",
+      "score": 100.0
+    },
+    "Vancouver | Washington | United States": {
+      "label": "Vancouver, Washington",
+      "lat": 45.631061,
+      "lon": -122.671567,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:55.704321+00:00",
+      "score": 100.0
+    },
+    "Veneta | Oregon | United States": {
+      "label": "Veneta, Oregon",
+      "lat": 44.048869,
+      "lon": -123.351532,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:27.250385+00:00",
+      "score": 100.0
+    },
+    "Vermont | Illinois | United States": {
+      "label": "Vermont, Illinois",
+      "lat": 40.2963613,
+      "lon": -90.4276769,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:21.468720+00:00",
+      "score": 100.0
+    },
+    "Vernon | New Jersey | United States": {
+      "label": "Vernon, New Jersey",
+      "lat": 41.1992161,
+      "lon": -74.4857338,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:39.156491+00:00",
+      "score": 100.0
+    },
+    "WINTER PARK | Florida | United States": {
+      "label": "Winter Park, Florida",
+      "lat": 28.600246,
+      "lon": -81.33882,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:11.700580+00:00",
+      "score": 100.0
+    },
+    "Wareham | Massachusetts | United States": {
+      "label": "Wareham, Massachusetts",
+      "lat": 41.758841,
+      "lon": -70.727434,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:48.005833+00:00",
+      "score": 100.0
+    },
+    "Warren | Michigan | United States": {
+      "label": "Warren, Michigan",
+      "lat": 42.49044,
+      "lon": -83.01304,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:05.042896+00:00",
+      "score": 100.0
+    },
+    "Warwick | Rhode Island | United States": {
+      "label": "Warwick, Rhode Island",
+      "lat": 41.6986537,
+      "lon": -71.4601801,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:30.876248+00:00",
+      "score": 100.0
+    },
+    "Washington | District of Columbia | United States": {
+      "label": "Washington, District of Columbia",
+      "lat": 38.8920621,
+      "lon": -77.0199124,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:01.043786+00:00",
+      "score": 100.0
+    },
+    "Wasilla | Alaska | United States": {
+      "label": "Wasilla, Alaska",
+      "lat": 61.585011,
+      "lon": -149.4507703,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:20.968264+00:00",
+      "score": 100.0
+    },
+    "Waterfall | Pennsylvania | United States": {
+      "label": "Waterfall, Pennsylvania",
+      "lat": 40.130053,
+      "lon": -78.068633,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:30.042681+00:00",
+      "score": 100.0
+    },
+    "Watertown | Connecticut | United States": {
+      "label": "Watertown, Connecticut",
+      "lat": 41.6063057,
+      "lon": -73.1183628,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:59.588348+00:00",
+      "score": 100.0
+    },
+    "Waukegan | Illinois | United States": {
+      "label": "Waukegan, Illinois",
+      "lat": 42.359584,
+      "lon": -87.8339,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:24.734265+00:00",
+      "score": 100.0
+    },
+    "Waukesha | Wisconsin | United States": {
+      "label": "Waukesha, Wisconsin",
+      "lat": 43.012805,
+      "lon": -88.235085,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:57.732779+00:00",
+      "score": 100.0
+    },
+    "Waynesville | Missouri | United States": {
+      "label": "Waynesville, Missouri",
+      "lat": 37.825018,
+      "lon": -92.210215,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:21.806733+00:00",
+      "score": 100.0
+    },
+    "Webberville | Michigan | United States": {
+      "label": "Webberville, Michigan",
+      "lat": 42.667001,
+      "lon": -84.174065,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:05.433191+00:00",
+      "score": 100.0
+    },
+    "Wellsville | New York | United States": {
+      "label": "Wellsville, New York",
+      "lat": 42.120693,
+      "lon": -77.946058,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:57.012655+00:00",
+      "score": 100.0
+    },
+    "West Milford | New Jersey | United States": {
+      "label": "West Milford, New Jersey",
+      "lat": 41.1307114,
+      "lon": -74.368456,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:39.581097+00:00",
+      "score": 100.0
+    },
+    "West Orange | New Jersey | United States": {
+      "label": "West Orange, New Jersey",
+      "lat": 40.792503,
+      "lon": -74.269745,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:52:40.172773+00:00",
+      "score": 100.0
+    },
+    "Westport | Massachusetts | United States": {
+      "label": "Westport, Massachusetts",
+      "lat": 41.621146,
+      "lon": -71.060778,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:49.023087+00:00",
+      "score": 100.0
+    },
+    "Whately | Massachusetts | United States": {
+      "label": "Whately, Massachusetts",
+      "lat": 42.444757,
+      "lon": -72.625761,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:49.402906+00:00",
+      "score": 100.0
+    },
+    "Wheat Ridge | Colorado | United States": {
+      "label": "Wheat Ridge, Colorado",
+      "lat": 39.769331,
+      "lon": -105.093757,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:56.418487+00:00",
+      "score": 100.0
+    },
+    "Willow | Alaska | United States": {
+      "label": "Willow, Alaska",
+      "lat": 61.736483,
+      "lon": -150.040112,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:50:21.358159+00:00",
+      "score": 100.0
+    },
+    "Wilmington | Delaware | United States": {
+      "label": "Wilmington, Delaware",
+      "lat": 39.7444318,
+      "lon": -75.5451003,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:00.412752+00:00",
+      "score": 100.0
+    },
+    "Wilson | North Carolina | United States": {
+      "label": "Wilson, North Carolina",
+      "lat": 35.731888,
+      "lon": -77.922737,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:00.128727+00:00",
+      "score": 100.0
+    },
+    "Winchester | Indiana | United States": {
+      "label": "Winchester, Indiana",
+      "lat": 40.17253,
+      "lon": -84.98132,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:22.485776+00:00",
+      "score": 100.0
+    },
+    "Worcester | Massachusetts | United States": {
+      "label": "Worcester, Massachusetts",
+      "lat": 42.2621176,
+      "lon": -71.8022386,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:50.409872+00:00",
+      "score": 100.0
+    },
+    "Yankton | South Dakota | United States": {
+      "label": "Yankton, South Dakota",
+      "lat": 42.871064,
+      "lon": -97.390536,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:33.279429+00:00",
+      "score": 100.0
+    },
+    "York | Maine | United States": {
+      "label": "York, Maine",
+      "lat": 43.1393493,
+      "lon": -70.6960396,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:51:30.495476+00:00",
+      "score": 100.0
+    },
+    "Youngstown | Ohio | United States": {
+      "label": "Youngstown, Ohio",
+      "lat": 41.09832,
+      "lon": -80.650648,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:08.467093+00:00",
+      "score": 100.0
+    },
+    "Yukon | Oklahoma | United States": {
+      "label": "Yukon, Oklahoma",
+      "lat": 35.5079062,
+      "lon": -97.7505295,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T01:53:20.426545+00:00",
+      "score": 100.0
+    },
+    "ZephyrHills | Florida | United States": {
+      "label": "Zephyrhills, Florida",
+      "lat": 28.236534,
+      "lon": -82.179884,
+      "provider": "arcgis",
+      "resolvedAt": "2026-03-19T03:04:25.306609+00:00",
+      "score": 100.0
+    }
+  },
+  "provider": "arcgis",
+  "version": 1
+}
