@@ -646,6 +646,18 @@ h3 {
   margin-top: 0;
 }
 
+.department-template-block {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.department-template-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--muted-strong);
+  line-height: 1.6;
+}
+
 .department-work-list,
 .detail-link-list,
 .detail-training-list,

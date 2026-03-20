@@ -44,10 +44,10 @@ Use `Command Structure` to connect standards to people, authority, and acknowled
 
 ## 5. Use the Department Workbench
 
-Use `Departments` to open clickable standards, checklists, training paths, and linked artifacts by team.
+Use `Departments` to inspect blueprint bullets in `Pilot View` or open clickable standards, checklists, training paths, and linked artifacts in `Demo Mode`.
 
-- Each department card now contains clickable work items instead of only a summary list.
-- Selecting a work item opens the department workbench below the cards.
+- Pilot View keeps this lane template-only so the platform stays easy to read at first pass.
+- Demo Mode turns the department lane into a clickable workbench with linked artifacts.
 - Every standard work item is expected to carry an attached training record in the active scenario.
 - Linked checklists and forms can be opened from the workbench.
 - Checklists, training paths, and related artifacts show backlinks to the standards that use them.
@@ -56,9 +56,10 @@ Use `Departments` to open clickable standards, checklists, training paths, and l
 
 `Pilot View` is now the default opening mode.
 
-- Pilot View is intentionally lighter and shows the structural skeleton of the system first.
-- Department work in Pilot View is reduced to hub-level pages so the experience is simpler and easier to orient to.
-- Use Pilot View when the goal is to understand the operating shape, ownership lanes, or the basic platform model without the richer fictional examples.
+- Pilot View is intentionally skeletal and shows template-like bullets instead of real or fictional standards.
+- Department work in Pilot View stays at the blueprint level: planned standard lanes, systems, flows, checklist expectations, and training rules.
+- Pilot View does not show simulated work items, simulated revision histories, or populated crew sign-off examples.
+- Use Pilot View when the goal is to understand the operating shape, ownership lanes, and template structure before looking at a richer example library.
 
 ## 7. Use Demo Mode when presenting the platform
 
@@ -66,7 +67,7 @@ Use `Demo Mode` when you want a mature live-looking system with fictional person
 
 - The scenario toggle is available near the top of the page for quick switching.
 - Demo Mode uses fictional GI Joe-inspired names.
-- Demo Mode shows a larger controlled document set across active, draft, under-review, and retired states.
+- Demo Mode is where clickable fictional standards, richer controlled document sets, and linked training/sign-off examples appear.
 - Demo Mode is best for leadership walkthroughs, training on future-state behavior, and platform demos that should not use live personnel names.
 
 ## 8. Use the Upload Gate

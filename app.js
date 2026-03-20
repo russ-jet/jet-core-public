@@ -1051,49 +1051,38 @@ const scenarioData = {
     label: "Pilot View",
     summary:
       "Simple skeleton view of the current operating shape, with only the baseline hubs, ownership lanes, and upload structure visible by default.",
+    autoTrainingCoverage: false,
     orgChart: data.orgChart,
     trainingRecords: [],
     uploaders: data.uploaders,
     documentSets: [
       {
-        type: "Department Hub",
-        title: "Manufacturing Hub",
+        type: "Skeleton Layer",
+        title: "Department Skeletons",
         lane: "Manufacturing",
         revision: "A",
         status: "active",
         owner: "Manufacturing Lead",
-        acceptance: "Skeleton lane established",
+        acceptance: "Template-level view only",
         training: "role-wide",
         supersedes: "none",
-        note: "Pilot mode starts from the hub structure rather than the richer fictional document set.",
+        note: "Pilot mode shows department structure and planned template lanes without named sample standards.",
       },
       {
-        type: "Department Hub",
-        title: "Customer Support Hub",
-        lane: "Customer Support",
+        type: "Skeleton Layer",
+        title: "Training Scaffold",
+        lane: "Command Structure",
         revision: "A",
         status: "active",
-        owner: "Customer Support Lead",
-        acceptance: "Skeleton lane established",
+        owner: "Operations Standard Owner",
+        acceptance: "Pilot structure only",
         training: "role-wide",
         supersedes: "none",
-        note: "Shows the pilot support lane without the deeper fictional demo records.",
+        note: "Training stays visible as a framework, but detailed fictional sign-off examples remain reserved for Demo Mode.",
       },
       {
-        type: "Department Hub",
-        title: "Finance Hub",
-        lane: "Finance",
-        revision: "A",
-        status: "draft",
-        owner: "Finance Lead",
-        acceptance: "Skeleton lane seeded",
-        training: "role-wide",
-        supersedes: "none",
-        note: "Finance appears in pilot mode as a governed department lane, without the richer demo-only finance library.",
-      },
-      {
-        type: "Operating Standard",
-        title: "Upload Gate and Revision Control Standard",
+        type: "Skeleton Layer",
+        title: "Governance Gate",
         lane: "Governance",
         revision: "A",
         status: "draft",
@@ -1101,7 +1090,19 @@ const scenarioData = {
         acceptance: "Concept gate in place",
         training: "role-wide",
         supersedes: "none",
-        note: "Pilot mode keeps the governance structure visible while the richer example set stays in Demo Mode.",
+        note: "Upload validation, revision rules, and routing remain visible in pilot mode because they shape the system even before richer examples exist.",
+      },
+      {
+        type: "Skeleton Layer",
+        title: "Demo Handoff",
+        lane: "Demo Mode",
+        revision: "A",
+        status: "draft",
+        owner: "Russ Dudek | Director of Operations",
+        acceptance: "Rich example set deferred",
+        training: "role-wide",
+        supersedes: "none",
+        note: "Named standards, rich fictional documents, sign-off depth, and mature example libraries live only behind the Demo Mode toggle.",
       },
     ],
   },
@@ -2786,6 +2787,10 @@ function buildSyntheticTrainingRecord(scenarioId, scenario, item) {
 
 function ensureScenarioTrainingCoverage() {
   Object.entries(scenarioData).forEach(([scenarioId, scenario]) => {
+    if (scenario.autoTrainingCoverage === false) {
+      return;
+    }
+
     getDepartmentWorkIndexForScenario(scenarioId).forEach((item) => {
       const titles = new Set(item.trainingTitles);
       const hasAttachedRecord = scenario.trainingRecords.some((record) => titles.has(record.standard));
@@ -3023,6 +3028,39 @@ function getTeamLabel(teamId) {
 
 function getScenario() {
   return scenarioData[activeScenario];
+}
+
+function isPilotScenario(scenarioId = activeScenario) {
+  return scenarioId === "pilot";
+}
+
+function getPilotDepartmentBlueprint(departmentId) {
+  if (!departmentId || departmentId === "all") {
+    return null;
+  }
+
+  const department = data.departments.find((item) => item.id === departmentId);
+  const hub = (pilotDepartmentWorkLibrary[departmentId] ?? [])[0] ?? null;
+
+  if (!department || !hub) {
+    return null;
+  }
+
+  return {
+    department,
+    hub,
+    templateLanes: department.standards ?? [],
+    checklistLanes: [
+      "Checklist template lane",
+      "Training acknowledgment template lane",
+      "Escalation and handoff checklist lane",
+    ],
+    trainingLanes: [
+      "Attach a training record to every released standard work item",
+      "Use group or individual acknowledgement based on the work",
+      "Reopen retraining on revision change, drift, or understanding gaps",
+    ],
+  };
 }
 
 function getStatusClass(status) {
@@ -3664,50 +3702,86 @@ function renderDepartments() {
     .join("");
 
   const visibleDepartments = getVisibleDepartments();
-  ensureActiveDepartmentDoc();
+  if (isPilotScenario()) {
+    departmentGrid.innerHTML = visibleDepartments
+      .map((dept) => {
+        const blueprint = getPilotDepartmentBlueprint(dept.id);
+        const templateLanes = blueprint?.templateLanes ?? dept.standards ?? [];
+        const systems = blueprint?.hub?.systems ?? [];
+        const flows = blueprint?.hub?.flows ?? [];
 
-  departmentGrid.innerHTML = visibleDepartments
-    .map((dept) => {
-      const workItems = getDepartmentWorkItems(dept.id);
-      return `
-        <article class="department-card">
-          <div>
-            <span class="department-tag">${escapeHtml(dept.label)}</span>
-            <h3>${escapeHtml(dept.label)}</h3>
-            <p>${escapeHtml(dept.summary)}</p>
-          </div>
-          <div class="department-work-list">
-            ${workItems
-              .map(
-                (item) => `
-                  <button
-                    class="department-work-button ${item.id === activeDepartmentDocId ? "is-active" : ""}"
-                    type="button"
-                    data-department-doc="${escapeHtml(item.id)}"
-                  >
-                    <strong>${escapeHtml(item.title)}</strong>
-                    <span>${escapeHtml(item.type)} · Rev ${escapeHtml(item.revision)} · ${escapeHtml(
-                      item.status,
-                    )}</span>
-                  </button>
-                `,
-              )
-              .join("")}
-          </div>
-        </article>
-      `;
-    })
-    .join("");
+        return `
+          <article class="department-card">
+            <div>
+              <span class="department-tag">${escapeHtml(dept.label)}</span>
+              <h3>${escapeHtml(dept.label)}</h3>
+              <p>${escapeHtml(dept.summary)}</p>
+            </div>
+            <div class="department-template-block">
+              <p class="command-kicker">Pilot blueprint lanes</p>
+              <ul class="department-template-list">
+                ${templateLanes.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+              </ul>
+            </div>
+            <div class="department-detail-meta">
+              <span class="branch-meta">Systems · ${escapeHtml(systems.join(", ") || "Planned systems")}</span>
+              <span class="branch-meta">Flows · ${escapeHtml(flows.join(", ") || "Planned flow links")}</span>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
 
-  renderDepartmentDetail(getDepartmentWorkItem(activeDepartmentDocId));
+    renderPilotDepartmentDetail();
+  } else {
+    ensureActiveDepartmentDoc();
+
+    departmentGrid.innerHTML = visibleDepartments
+      .map((dept) => {
+        const workItems = getDepartmentWorkItems(dept.id);
+        return `
+          <article class="department-card">
+            <div>
+              <span class="department-tag">${escapeHtml(dept.label)}</span>
+              <h3>${escapeHtml(dept.label)}</h3>
+              <p>${escapeHtml(dept.summary)}</p>
+            </div>
+            <div class="department-work-list">
+              ${workItems
+                .map(
+                  (item) => `
+                    <button
+                      class="department-work-button ${item.id === activeDepartmentDocId ? "is-active" : ""}"
+                      type="button"
+                      data-department-doc="${escapeHtml(item.id)}"
+                    >
+                      <strong>${escapeHtml(item.title)}</strong>
+                      <span>${escapeHtml(item.type)} · Rev ${escapeHtml(item.revision)} · ${escapeHtml(
+                        item.status,
+                      )}</span>
+                    </button>
+                  `,
+                )
+                .join("")}
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+
+    renderDepartmentDetail(getDepartmentWorkItem(activeDepartmentDocId));
+  }
 
   departmentFilters.querySelectorAll("[data-department]").forEach((button) => {
     button.addEventListener("click", () => {
       activeDepartment = button.dataset.department;
-      ensureActiveDepartmentDoc();
       renderDepartments();
     });
   });
+
+  if (isPilotScenario()) {
+    return;
+  }
 
   departmentGrid.querySelectorAll("[data-department-doc]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -3716,6 +3790,106 @@ function renderDepartments() {
       requestAnimationFrame(scrollDepartmentWorkbenchIntoView);
     });
   });
+}
+
+function renderPilotDepartmentDetail() {
+  if (activeDepartment === "all") {
+    departmentDetailPanel.innerHTML = `
+      <div class="department-detail-head">
+        <div>
+          <p class="command-kicker">Pilot Blueprint</p>
+          <h3>Template-first department scaffolding</h3>
+          <p>Pilot View keeps the department lane intentionally skeletal. Use the filter chips above to inspect one department blueprint at a time, or switch to Demo Mode to open richer fictional standards and linked artifacts.</p>
+        </div>
+      </div>
+      <div class="department-detail-grid">
+        <article class="detail-card">
+          <p class="command-kicker">What stays visible</p>
+          <h4>Only the starter framework</h4>
+          <ul>
+            <li>Planned standard-work lanes by department</li>
+            <li>Connected systems and flow ownership</li>
+            <li>Training and checklist expectations as templates</li>
+          </ul>
+        </article>
+        <article class="detail-card">
+          <p class="command-kicker">What stays hidden</p>
+          <h4>No simulated work library in pilot</h4>
+          <ul>
+            <li>No fictional clickable standards</li>
+            <li>No populated sign-off examples</li>
+            <li>No mature revision-history storytelling until Demo Mode</li>
+          </ul>
+        </article>
+      </div>
+    `;
+    return;
+  }
+
+  const blueprint = getPilotDepartmentBlueprint(activeDepartment);
+
+  if (!blueprint) {
+    departmentDetailPanel.innerHTML = `
+      <div class="department-detail-head">
+        <div>
+          <p class="command-kicker">Pilot Blueprint</p>
+          <h3>Select a department filter</h3>
+          <p>Choose a department above to inspect its template lanes, systems, flow links, and training skeleton.</p>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  departmentDetailPanel.innerHTML = `
+    <div class="department-detail-head">
+      <div>
+        <div class="department-detail-meta">
+          <span class="department-tag">${escapeHtml(blueprint.department.label)}</span>
+          <span class="branch-meta">Pilot blueprint</span>
+          <span class="branch-meta">Template only</span>
+        </div>
+        <h3>${escapeHtml(blueprint.department.label)} pilot scaffold</h3>
+        <p>${escapeHtml(blueprint.hub.summary)}</p>
+      </div>
+      <div class="department-detail-status">
+        <span class="status-pill is-warning">Skeleton only</span>
+        <span class="branch-meta">Owner lane · ${escapeHtml(blueprint.hub.owner)}</span>
+      </div>
+    </div>
+    <div class="department-detail-meta">
+      <span class="branch-meta">Systems · ${escapeHtml(blueprint.hub.systems.join(", "))}</span>
+      <span class="branch-meta">Flows · ${escapeHtml(blueprint.hub.flows.join(", "))}</span>
+      <span class="branch-meta">Training · required on release</span>
+      <span class="branch-meta">Artifacts · template-level only</span>
+    </div>
+    <div class="department-detail-grid">
+      <article class="detail-card">
+        <p class="command-kicker">Planned Standard Lanes</p>
+        <h4>Template bullets for future controlled content</h4>
+        <ul>${blueprint.templateLanes.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </article>
+      <article class="detail-card">
+        <p class="command-kicker">Checklist and Form Skeleton</p>
+        <h4>Reusable support artifacts expected in this lane</h4>
+        <ul>${blueprint.checklistLanes.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </article>
+      <article class="detail-card">
+        <p class="command-kicker">Training Contract</p>
+        <h4>How acknowledgement should attach once work is released</h4>
+        <ul>${blueprint.trainingLanes.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </article>
+      <article class="detail-card">
+        <p class="command-kicker">Next Step</p>
+        <h4>Open Demo Mode for live-looking examples</h4>
+        <ul>
+          <li>Demo Mode is where fictional standards, checklists, revisions, and sign-off patterns are demonstrated.</li>
+          <li>Pilot View stays limited to structure, ownership, and template-level planning.</li>
+          <li>This separation keeps the default experience simple and honest.</li>
+        </ul>
+      </article>
+    </div>
+  `;
 }
 
 function renderDepartmentDetail(item) {
@@ -3984,6 +4158,58 @@ function getTrainingStats(records = getScenario().trainingRecords) {
 function renderOrgChart() {
   const scenario = getScenario();
 
+  if (isPilotScenario()) {
+    orgRoot.innerHTML = `
+      <article class="org-root-card">
+        <span class="org-kicker">Pilot authority</span>
+        <h3>${escapeHtml(scenario.orgChart.leader.name)}</h3>
+        <p>${escapeHtml(scenario.orgChart.leader.role)}</p>
+        <p>${escapeHtml(scenario.orgChart.leader.scope)}</p>
+        <div class="status-pill is-warning">Pilot skeleton only</div>
+      </article>
+    `;
+
+    orgGrid.innerHTML = scenario.orgChart.branches
+      .map(
+        (branch) => `
+          <article class="org-node">
+            <div>
+              <span class="branch-meta">${escapeHtml(branch.label)}</span>
+              <h3>${escapeHtml(branch.lead)}</h3>
+              <p>${escapeHtml(branch.crew)}</p>
+            </div>
+            <div class="org-node-status">
+              <span class="status-pill is-warning">Template lane</span>
+              <span class="org-inline-note">Demo Mode shows populated sign-off states</span>
+            </div>
+            <dl class="org-facts">
+              <div class="org-fact">
+                <dt>Crew</dt>
+                <dd>${escapeHtml(branch.crewCount)}</dd>
+              </div>
+              <div class="org-fact">
+                <dt>Lane</dt>
+                <dd>${escapeHtml(getTeamLabel(branch.id))}</dd>
+              </div>
+              <div class="org-fact">
+                <dt>Training</dt>
+                <dd>Required on release</dd>
+              </div>
+              <div class="org-fact">
+                <dt>Sign-off</dt>
+                <dd>Template only</dd>
+              </div>
+            </dl>
+            <ul>${branch.trainingFocus
+              .map((item) => `<li>${escapeHtml(item)}</li>`)
+              .join("")}</ul>
+          </article>
+        `,
+      )
+      .join("");
+    return;
+  }
+
   orgRoot.innerHTML = `
     <article class="org-root-card">
       <span class="org-kicker">Top authority</span>
@@ -4042,6 +4268,82 @@ function renderOrgChart() {
 
 function renderTrainingSummary() {
   const scenario = getScenario();
+
+  if (isPilotScenario()) {
+    const summaryCards = [
+      {
+        label: "Training model",
+        value: "Template",
+        note: "Pilot shows the required structure without populated crew acknowledgements.",
+      },
+      {
+        label: "Required rule",
+        value: "100%",
+        note: "Every released standard work item must carry an attached training record.",
+      },
+      {
+        label: "Sign-off shape",
+        value: "2",
+        note: "Use individual or group acknowledgement depending on the work.",
+      },
+      {
+        label: "Retraining triggers",
+        value: "3",
+        note: "Revision change, knowledge drift, and lack of understanding reopen training.",
+      },
+    ];
+
+    trainingSummaryGrid.innerHTML = summaryCards
+      .map(
+        (card) => `
+          <article class="training-summary-card">
+            <span class="branch-meta">${escapeHtml(card.label)}</span>
+            <strong>${escapeHtml(card.value)}</strong>
+            <p>${escapeHtml(card.note)}</p>
+          </article>
+        `,
+      )
+      .join("");
+
+    trainingProgressList.innerHTML = `
+      <article class="progress-card">
+        <div class="progress-card-head">
+          <div>
+            <span class="branch-meta">Pilot readiness shell</span>
+            <h3>Department progress bars appear here once live records exist</h3>
+          </div>
+          <strong>Template</strong>
+        </div>
+        <p>Pilot View keeps the dashboard framework visible without simulating crew completion percentages.</p>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" style="width: 28%"></div>
+        </div>
+        <div class="progress-card-footer">
+          <span>Lead-owned review</span>
+          <span>Revision-aware</span>
+          <span>Training attached on release</span>
+        </div>
+      </article>
+    `;
+
+    retrainingList.innerHTML = `
+      <article class="retraining-card">
+        <div class="progress-card-head">
+          <span class="branch-meta">Pilot placeholder</span>
+          <span class="severity-pill is-warning">Template trigger</span>
+        </div>
+        <h3>Retraining queue appears here after live records are attached</h3>
+        <p>Use this lane for revision-driven retraining, knowledge drift, and understanding gaps.</p>
+        <ul>
+          <li>New revision release</li>
+          <li>Knowledge drift or missed understanding</li>
+          <li>Incident, defect, or audit follow-up</li>
+        </ul>
+      </article>
+    `;
+    return;
+  }
+
   const stats = getTrainingStats();
   const staleCount = scenario.trainingRecords.filter(
     (record) =>
@@ -4139,6 +4441,46 @@ function renderTrainingSummary() {
 
 function renderTrainingSignoffs() {
   const scenario = getScenario();
+
+  if (isPilotScenario()) {
+    trainingFilters.innerHTML =
+      '<span class="branch-meta">Pilot skeleton only · switch to Demo Mode for populated sign-off examples.</span>';
+
+    signoffGrid.innerHTML = `
+      <article class="signoff-card">
+        <div class="signoff-card-head">
+          <div>
+            <span class="branch-meta">Group acknowledgement template</span>
+            <h3>Crew sign-off row</h3>
+          </div>
+          <span class="status-pill is-warning">Template</span>
+        </div>
+        <p>Use a crew-level acknowledgement when a released standard applies to a whole team or cell.</p>
+        <ul>
+          <li>Reference the released document title and revision.</li>
+          <li>Show the trigger that opened acknowledgement.</li>
+          <li>Keep the row open until the assigned crew confirms understanding.</li>
+        </ul>
+      </article>
+      <article class="signoff-card">
+        <div class="signoff-card-head">
+          <div>
+            <span class="branch-meta">Individual acknowledgement template</span>
+            <h3>Role-owner sign-off row</h3>
+          </div>
+          <span class="status-pill is-warning">Template</span>
+        </div>
+        <p>Use an individual acknowledgement when release authority, inspection authority, or role recertification matters.</p>
+        <ul>
+          <li>Capture the responsible role or named owner.</li>
+          <li>Track due timing and revision linkage.</li>
+          <li>Reopen retraining on revision change, drift, or misunderstanding.</li>
+        </ul>
+      </article>
+    `;
+    return;
+  }
+
   const filterOptions = [
     { id: "all", label: "All Teams" },
     ...scenario.orgChart.branches.map((item) => ({
@@ -4906,18 +5248,34 @@ function buildSearchIndex() {
     })),
   );
 
-  const departmentItems = departmentWorkIndex.map((item) => ({
-    label: item.title,
-    section: `${getTeamLabel(item.department)} · ${item.type}`,
-    description: item.summary,
-    bullets: [
-      `Revision ${item.revision}`,
-      item.status,
-      `Owner: ${item.owner}`,
-      `Systems: ${item.systems.join(", ")}`,
-      `Flows: ${item.flows.join(", ")}`,
-    ],
-  }));
+  const departmentItems = isPilotScenario()
+    ? data.departments
+        .filter((item) => item.id !== "all")
+        .map((department) => {
+          const blueprint = getPilotDepartmentBlueprint(department.id);
+          return {
+            label: `${department.label} Pilot Blueprint`,
+            section: "Departments · Pilot skeleton",
+            description: department.summary,
+            bullets: [
+              ...(blueprint?.templateLanes ?? []).slice(0, 3),
+              `Systems: ${(blueprint?.hub?.systems ?? []).join(", ")}`,
+              `Flows: ${(blueprint?.hub?.flows ?? []).join(", ")}`,
+            ],
+          };
+        })
+    : departmentWorkIndex.map((item) => ({
+        label: item.title,
+        section: `${getTeamLabel(item.department)} · ${item.type}`,
+        description: item.summary,
+        bullets: [
+          `Revision ${item.revision}`,
+          item.status,
+          `Owner: ${item.owner}`,
+          `Systems: ${item.systems.join(", ")}`,
+          `Flows: ${item.flows.join(", ")}`,
+        ],
+      }));
 
   const flowItems = data.flows.map((flow) => ({
     label: flow.title,
@@ -4933,12 +5291,26 @@ function buildSearchIndex() {
     bullets: [template.filename, template.kind],
   }));
 
-  const trainingItems = scenario.trainingRecords.map((record) => ({
-    label: record.standard,
-    section: `Command Structure · ${getTeamLabel(record.team)}`,
-    description: `${record.label} · ${record.audience}`,
-    bullets: [record.trigger, `Revision ${record.revision}`, `Due ${record.due}`],
-  }));
+  const trainingItems = isPilotScenario()
+    ? [
+        {
+          label: "Training Attachment Rule",
+          section: "Command Structure · Pilot skeleton",
+          description:
+            "Every released standard work item will require an attached training record, but pilot keeps that lane template-only.",
+          bullets: [
+            "Attach training on release",
+            "Use individual or group acknowledgement",
+            "Reopen on revision change or knowledge drift",
+          ],
+        },
+      ]
+    : scenario.trainingRecords.map((record) => ({
+        label: record.standard,
+        section: `Command Structure · ${getTeamLabel(record.team)}`,
+        description: `${record.label} · ${record.audience}`,
+        bullets: [record.trigger, `Revision ${record.revision}`, `Due ${record.due}`],
+      }));
 
   const documentItems = scenario.documentSets.map((document) => ({
     label: document.title,
