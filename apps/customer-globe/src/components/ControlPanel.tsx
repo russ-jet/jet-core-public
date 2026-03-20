@@ -8,6 +8,7 @@ import {
 } from "react";
 import { deriveSearchSuggestions } from "../lib/filters";
 import { machineTypeColor } from "../lib/machineTypeColors";
+import catEmojiAsset from "../assets/vape-jet-cat.svg";
 import type {
   PublicGlobeDataset,
   SearchSuggestion,
@@ -132,7 +133,8 @@ export default function ControlPanel({
       <div className="eyebrow">Vape-Jet C.A.T.S.</div>
       <h1>Cannabis Automation Tech Supremacy</h1>
       <p className="lede">
-        Explore the global fleet of Vape-Jet C.A.T.S. and see where it has already landed.
+        Explore the global fleet of Vape-Jet C.A.T.S. and see where{" "}
+        <img className="inline-cat-mark" src={catEmojiAsset} alt="Vape-Jet C.A.T.S." /> has already landed.
       </p>
 
       <div className="stats-ribbon" aria-label="Fleet summary">

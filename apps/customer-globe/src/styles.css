@@ -170,6 +170,15 @@ input {
   font-size: 1rem;
 }
 
+.inline-cat-mark {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin: 0 0.14em 0 0.06em;
+  vertical-align: -0.19em;
+  filter: drop-shadow(0 0 10px rgba(255, 135, 135, 0.22));
+}
+
 .stats-ribbon {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
