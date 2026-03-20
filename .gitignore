@@ -9,3 +9,5 @@ apps/customer-globe/node_modules/
 apps/customer-globe/dist/
 apps/customer-globe/.vite/
 apps/customer-globe/*.tsbuildinfo
+apps/customer-globe/vite.config.js
+apps/customer-globe/vite.config.d.ts
