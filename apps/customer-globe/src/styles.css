@@ -177,27 +177,6 @@ input {
   margin: 0 0.14em 0 0.06em;
   vertical-align: -0.19em;
   filter: drop-shadow(0 0 10px rgba(255, 135, 135, 0.22));
-  transform-origin: 50% 72%;
-  animation: cat-mark-bob 1.9s ease-in-out infinite;
-}
-
-@keyframes cat-mark-bob {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-
-  25% {
-    transform: translateY(-0.05em) rotate(-3deg) scale(1.02);
-  }
-
-  55% {
-    transform: translateY(0.03em) rotate(2deg) scale(0.99);
-  }
-
-  75% {
-    transform: translateY(-0.02em) rotate(-1deg) scale(1.01);
-  }
 }
 
 .stats-ribbon {

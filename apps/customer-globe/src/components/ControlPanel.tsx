@@ -8,7 +8,7 @@ import {
 } from "react";
 import { deriveSearchSuggestions } from "../lib/filters";
 import { machineTypeColor } from "../lib/machineTypeColors";
-import catEmojiAsset from "../assets/vape-jet-cat.svg";
+import catEmojiAsset from "../assets/vape-jet-cat.gif";
 import type {
   PublicGlobeDataset,
   SearchSuggestion,
