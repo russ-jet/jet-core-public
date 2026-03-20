@@ -699,9 +699,33 @@ const data = {
       name: "Russ Dudek",
       role: "Director of Operations",
       scope: "Pilot owner and current primary approval seat",
-      coverage: "Manufacturing, Quality Control, Logistics, Customer Support, Finance, Governance",
+      coverage: "All department hubs, pilot operating lanes, and governance scaffolding",
     },
     branches: [
+      {
+        id: "marketing",
+        label: "Marketing",
+        lead: "Marketing Lead",
+        crew: "Brand and Web Team",
+        crewCount: "1 group / 3 people",
+        trainingFocus: [
+          "Brand governance skeleton",
+          "Launch coordination handoff",
+          "Future content and SEO standards",
+        ],
+      },
+      {
+        id: "sales",
+        label: "Sales",
+        lead: "Sales Lead",
+        crew: "Commercial Team",
+        crewCount: "1 group / 3 people",
+        trainingFocus: [
+          "Opportunity and order handoff skeleton",
+          "Commercial ownership boundaries",
+          "Future HubSpot and Odoo discipline",
+        ],
+      },
       {
         id: "manufacturing",
         label: "Manufacturing",
@@ -763,6 +787,18 @@ const data = {
         ],
       },
       {
+        id: "product-design",
+        label: "Product Design",
+        lead: "Product Design Lead",
+        crew: "Design and Fixture Team",
+        crewCount: "1 group / 3 people",
+        trainingFocus: [
+          "Fusion release-readiness skeleton",
+          "Future design framework standards",
+          "Compatibility handoff expectations",
+        ],
+      },
+      {
         id: "engineering",
         label: "Engineering",
         lead: "Engineering Lead",
@@ -772,6 +808,18 @@ const data = {
           "Controlled specs and change control",
           "Fusion and Odoo alignment",
           "VCMP and release packet review",
+        ],
+      },
+      {
+        id: "software",
+        label: "Software",
+        lead: "Software Lead",
+        crew: "Release and Support Engineers",
+        crewCount: "1 group / 3 people",
+        trainingFocus: [
+          "VJN and release skeleton",
+          "Future feature-routing standards",
+          "Support handoff expectations",
         ],
       },
       {
@@ -1001,34 +1049,47 @@ const data = {
 const scenarioData = {
   pilot: {
     label: "Pilot View",
-    summary: "Current pilot-lane ownership, live sign-off gaps, and the present upload-authority model.",
+    summary:
+      "Simple skeleton view of the current operating shape, with only the baseline hubs, ownership lanes, and upload structure visible by default.",
     orgChart: data.orgChart,
-    trainingRecords: data.trainingRecords,
+    trainingRecords: [],
     uploaders: data.uploaders,
     documentSets: [
       {
-        type: "Controlled Engineering Spec",
-        title: "Connector Retention Material and Adhesive Spec",
-        lane: "Engineering",
-        revision: "C",
+        type: "Department Hub",
+        title: "Manufacturing Hub",
+        lane: "Manufacturing",
+        revision: "A",
         status: "active",
-        owner: "Russ Dudek | Director of Operations",
-        acceptance: "3 of 4 leads acknowledged",
+        owner: "Manufacturing Lead",
+        acceptance: "Skeleton lane established",
         training: "role-wide",
-        supersedes: "Rev B",
-        note: "Feeds Manufacturing application and QC inspection from the same controlled requirement.",
+        supersedes: "none",
+        note: "Pilot mode starts from the hub structure rather than the richer fictional document set.",
       },
       {
-        type: "Checklist",
-        title: "Connector Retention Application and Verification",
-        lane: "Manufacturing",
-        revision: "B",
-        status: "under review",
-        owner: "Manufacturing Lead",
-        acceptance: "1 of 2 sign-offs complete",
-        training: "targeted",
-        supersedes: "Rev A",
-        note: "Pending acknowledgement after the adhesive-method update.",
+        type: "Department Hub",
+        title: "Customer Support Hub",
+        lane: "Customer Support",
+        revision: "A",
+        status: "active",
+        owner: "Customer Support Lead",
+        acceptance: "Skeleton lane established",
+        training: "role-wide",
+        supersedes: "none",
+        note: "Shows the pilot support lane without the deeper fictional demo records.",
+      },
+      {
+        type: "Department Hub",
+        title: "Finance Hub",
+        lane: "Finance",
+        revision: "A",
+        status: "draft",
+        owner: "Finance Lead",
+        acceptance: "Skeleton lane seeded",
+        training: "role-wide",
+        supersedes: "none",
+        note: "Finance appears in pilot mode as a governed department lane, without the richer demo-only finance library.",
       },
       {
         type: "Operating Standard",
@@ -1037,34 +1098,10 @@ const scenarioData = {
         revision: "A",
         status: "draft",
         owner: "Russ Dudek | Director of Operations",
-        acceptance: "0 of 3 upload delegates approved",
+        acceptance: "Concept gate in place",
         training: "role-wide",
         supersedes: "none",
-        note: "New rule set for clean markdown upload and supersede handling.",
-      },
-      {
-        type: "Training Path",
-        title: "Support Troubleshooting and Remote Session Path",
-        lane: "Customer Support",
-        revision: "B",
-        status: "active",
-        owner: "Customer Support Lead",
-        acceptance: "1 of 2 sign-offs complete",
-        training: "targeted",
-        supersedes: "Rev A",
-        note: "Covers VJSD intake, Brain review, Zoom troubleshooting, and controlled remote escalation.",
-      },
-      {
-        type: "Operating Standard",
-        title: "Month-End Close Control Board",
-        lane: "Finance",
-        revision: "B",
-        status: "under review",
-        owner: "Finance Lead | Controller",
-        acceptance: "1 of 3 finance acknowledgements complete",
-        training: "role-wide",
-        supersedes: "Rev A",
-        note: "Adds a governed close cadence, reconciliation ownership, and explicit handoff into payroll and receivables review.",
+        note: "Pilot mode keeps the governance structure visible while the richer example set stays in Demo Mode.",
       },
     ],
   },
@@ -1685,7 +1722,7 @@ const scenarioData = {
   },
 };
 
-const departmentWorkLibrary = {
+const demoDepartmentWorkLibrary = {
   marketing: [
     {
       id: "website-update-and-brand-governance",
@@ -2512,15 +2549,198 @@ const departmentWorkLibrary = {
   ],
 };
 
-const departmentWorkIndex = Object.values(departmentWorkLibrary)
-  .flat()
-  .map((item) => ({
-    ...item,
-    trainingTitles:
-      item.trainingTitles && item.trainingTitles.length > 0 ? item.trainingTitles : [item.title],
-  }));
+const pilotDepartmentWorkLibrary = {
+  marketing: [
+    {
+      id: "marketing-hub",
+      department: "marketing",
+      title: "Marketing Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "draft",
+      owner: "Marketing Lead",
+      summary:
+        "Skeleton hub for marketing ownership, launch coordination, and future content standards in the pilot experience.",
+      related: [],
+      systems: ["HubSpot", "Slack"],
+      flows: ["Lead to Order"],
+      trainingTitles: [],
+    },
+  ],
+  sales: [
+    {
+      id: "sales-hub",
+      department: "sales",
+      title: "Sales Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "draft",
+      owner: "Sales Lead",
+      summary:
+        "Skeleton hub for commercial ownership, order handoff, and future sales discipline in the pilot experience.",
+      related: [],
+      systems: ["HubSpot", "Odoo", "Jira"],
+      flows: ["Lead to Order", "Order to Build"],
+      trainingTitles: [],
+    },
+  ],
+  finance: [
+    {
+      id: "finance-hub",
+      department: "finance",
+      title: "Finance Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "draft",
+      owner: "Finance Lead",
+      summary:
+        "Skeleton hub for finance ownership, close discipline, payroll, and future AP/AR control standards in the pilot experience.",
+      related: [],
+      systems: ["Odoo", "Slack"],
+      flows: ["Lead to Order", "Order to Build", "Build to Ship"],
+      trainingTitles: [],
+    },
+  ],
+  "customer-support": [
+    {
+      id: "customer-support-hub",
+      department: "customer-support",
+      title: "Customer Support Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "active",
+      owner: "Customer Support Lead",
+      summary:
+        "Skeleton hub for support ownership, issue intake, and future troubleshooting standards in the pilot experience.",
+      related: [],
+      systems: ["Jira", "Brain", "Zoom"],
+      flows: ["Issue to Resolution"],
+      trainingTitles: [],
+    },
+  ],
+  manufacturing: [
+    {
+      id: "manufacturing-hub",
+      department: "manufacturing",
+      title: "Manufacturing Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "active",
+      owner: "Manufacturing Lead",
+      summary:
+        "Skeleton hub for work-cell ownership, floor execution, and future build standards in the pilot experience.",
+      related: [],
+      systems: ["Odoo", "Product Home"],
+      flows: ["Order to Build", "Build to Ship"],
+      trainingTitles: [],
+    },
+  ],
+  logistics: [
+    {
+      id: "logistics-hub",
+      department: "logistics",
+      title: "Logistics Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "active",
+      owner: "Logistics Lead",
+      summary:
+        "Skeleton hub for inventory, order release, and shipment ownership in the pilot experience.",
+      related: [],
+      systems: ["Odoo"],
+      flows: ["Order to Build", "Build to Ship", "Issue to Resolution"],
+      trainingTitles: [],
+    },
+  ],
+  "quality-control": [
+    {
+      id: "quality-control-hub",
+      department: "quality-control",
+      title: "Quality Control Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "active",
+      owner: "Quality Control Lead",
+      summary:
+        "Skeleton hub for inspection, containment, and release ownership in the pilot experience.",
+      related: [],
+      systems: ["Odoo", "Jira"],
+      flows: ["Build to Ship", "Change to Release"],
+      trainingTitles: [],
+    },
+  ],
+  "product-design": [
+    {
+      id: "product-design-hub",
+      department: "product-design",
+      title: "Product Design Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "draft",
+      owner: "Product Design Lead",
+      summary:
+        "Skeleton hub for design ownership, release-readiness, and future framework standards in the pilot experience.",
+      related: [],
+      systems: ["Fusion", "Slack"],
+      flows: ["Change to Release", "Order to Build"],
+      trainingTitles: [],
+    },
+  ],
+  engineering: [
+    {
+      id: "engineering-hub",
+      department: "engineering",
+      title: "Engineering Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "active",
+      owner: "Engineering Lead",
+      summary:
+        "Skeleton hub for change control, controlled specs, and technical release ownership in the pilot experience.",
+      related: [],
+      systems: ["Fusion", "Odoo", "Jira", "Product Home"],
+      flows: ["Order to Build", "Change to Release"],
+      trainingTitles: [],
+    },
+  ],
+  software: [
+    {
+      id: "software-hub",
+      department: "software",
+      title: "Software Hub",
+      type: "Department Hub",
+      revision: "A",
+      status: "draft",
+      owner: "Software Lead",
+      summary:
+        "Skeleton hub for software ownership, release handoff, and future VJN/feature standards in the pilot experience.",
+      related: [],
+      systems: ["Jira", "Slack", "Brain"],
+      flows: ["Issue to Resolution", "Change to Release"],
+      trainingTitles: [],
+    },
+  ],
+};
 
-const departmentWorkMap = new Map(departmentWorkIndex.map((item) => [item.id, item]));
+const departmentWorkLibraries = {
+  pilot: pilotDepartmentWorkLibrary,
+  demo: demoDepartmentWorkLibrary,
+};
+
+function getDepartmentWorkIndexForScenario(scenarioId = activeScenario) {
+  const library = departmentWorkLibraries[scenarioId] ?? pilotDepartmentWorkLibrary;
+  return Object.values(library)
+    .flat()
+    .map((item) => ({
+      ...item,
+      trainingTitles:
+        item.trainingTitles && item.trainingTitles.length > 0 ? item.trainingTitles : [item.title],
+    }));
+}
+
+function getDepartmentWorkMapForScenario(scenarioId = activeScenario) {
+  return new Map(getDepartmentWorkIndexForScenario(scenarioId).map((item) => [item.id, item]));
+}
 
 function getScenarioBranch(scenario, departmentId) {
   return scenario.orgChart.branches.find((branch) => branch.id === departmentId) ?? null;
@@ -2566,7 +2786,7 @@ function buildSyntheticTrainingRecord(scenarioId, scenario, item) {
 
 function ensureScenarioTrainingCoverage() {
   Object.entries(scenarioData).forEach(([scenarioId, scenario]) => {
-    departmentWorkIndex.forEach((item) => {
+    getDepartmentWorkIndexForScenario(scenarioId).forEach((item) => {
       const titles = new Set(item.trainingTitles);
       const hasAttachedRecord = scenario.trainingRecords.some((record) => titles.has(record.standard));
 
@@ -2777,7 +2997,7 @@ let activeBranch = data.branches[0].id;
 let activeFlow = data.flows[0].id;
 let activeDepartment = "all";
 let activeDepartmentDocId = "";
-let activeScenario = "demo";
+let activeScenario = "pilot";
 let activeTrainingTeam = "all";
 let searchIsDocked = false;
 let latestUploadReport = null;
@@ -2816,11 +3036,11 @@ function getStatusClass(status) {
 }
 
 function getDepartmentWorkItems(departmentId) {
-  return departmentWorkLibrary[departmentId] ?? [];
+  return (departmentWorkLibraries[activeScenario] ?? pilotDepartmentWorkLibrary)[departmentId] ?? [];
 }
 
 function getDepartmentWorkItem(docId) {
-  return departmentWorkMap.get(docId) ?? null;
+  return getDepartmentWorkMapForScenario(activeScenario).get(docId) ?? null;
 }
 
 function getVisibleDepartments() {
@@ -2850,7 +3070,9 @@ function getTrainingRecordsForWorkItem(item) {
 }
 
 function getBacklinksForWorkItem(docId) {
-  return departmentWorkIndex.filter((item) => (item.related ?? []).includes(docId));
+  return getDepartmentWorkIndexForScenario(activeScenario).filter((item) =>
+    (item.related ?? []).includes(docId),
+  );
 }
 
 function scrollDepartmentWorkbenchIntoView() {
@@ -2904,6 +3126,10 @@ function buildScopeBullets(item, relatedDocs) {
 }
 
 function buildTriggerText(item, trainingRecords) {
+  if (item.type === "Department Hub") {
+    return `Use this hub when ownership, the right next standard, or the correct ${getTeamLabel(item.department)} lane is not yet obvious.`;
+  }
+
   if (trainingRecords.length > 0) {
     return `Current scenario trigger: ${trainingRecords[0].trigger}.`;
   }
@@ -2958,6 +3184,16 @@ function buildWorkStepBullets(item, checklistTitles, standardTitles, backlinks) 
           .map((doc) => doc.title)
           .join(", ")}.`
       : "Before changing this artifact, confirm whether any downstream team, checklist, or release packet depends on it.";
+
+  if (item.type === "Department Hub") {
+    return [
+      `Start here to understand what ${getTeamLabel(item.department)} owns in the current operating model.`,
+      "Use this skeleton hub to find the next standard, checklist, training path, or shared-system reference as the library matures.",
+      linkedStandardText,
+      `Confirm the primary systems and flows for this lane before drafting or revising deeper standards.`,
+      backlinkText,
+    ];
+  }
 
   switch (item.department) {
     case "marketing":
@@ -3052,6 +3288,13 @@ function buildWorkStepBullets(item, checklistTitles, standardTitles, backlinks) 
 }
 
 function buildInputOutputBullets(item) {
+  if (item.type === "Department Hub") {
+    return [
+      `Inputs: an ownership question, a department-level execution need, or uncertainty about the right next page inside ${getTeamLabel(item.department)}.`,
+      `Outputs: the correct lane, owner, and next standard or system reference for ${getTeamLabel(item.department)} work.`,
+    ];
+  }
+
   switch (item.department) {
     case "marketing":
       return [
@@ -3112,6 +3355,14 @@ function buildInputOutputBullets(item) {
 }
 
 function buildRiskBullets(item) {
+  if (item.type === "Department Hub") {
+    return [
+      "Escalate if the department lane is missing a needed standard, checklist, or training path for live work.",
+      "Escalate if ownership between the department, a shared system, and a cross-functional flow is still unclear.",
+      "Escalate if teams are relying on verbal instruction because the next controlled page has not been seeded yet.",
+    ];
+  }
+
   switch (item.department) {
     case "marketing":
       return [
@@ -4645,6 +4896,7 @@ function handleUploadValidation() {
 
 function buildSearchIndex() {
   const scenario = getScenario();
+  const departmentWorkIndex = getDepartmentWorkIndexForScenario(activeScenario);
   const branchItems = data.branches.flatMap((branch) =>
     branch.cards.map((card) => ({
       label: card.title,

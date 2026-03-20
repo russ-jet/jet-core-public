@@ -52,7 +52,15 @@ Use `Departments` to open clickable standards, checklists, training paths, and l
 - Linked checklists and forms can be opened from the workbench.
 - Checklists, training paths, and related artifacts show backlinks to the standards that use them.
 
-## 6. Use Demo Mode when presenting the platform
+## 6. Start in Pilot View, then switch to Demo Mode when needed
+
+`Pilot View` is now the default opening mode.
+
+- Pilot View is intentionally lighter and shows the structural skeleton of the system first.
+- Department work in Pilot View is reduced to hub-level pages so the experience is simpler and easier to orient to.
+- Use Pilot View when the goal is to understand the operating shape, ownership lanes, or the basic platform model without the richer fictional examples.
+
+## 7. Use Demo Mode when presenting the platform
 
 Use `Demo Mode` when you want a mature live-looking system with fictional personnel, deeper revision history, and varied sign-off states.
 
@@ -61,7 +69,7 @@ Use `Demo Mode` when you want a mature live-looking system with fictional person
 - Demo Mode shows a larger controlled document set across active, draft, under-review, and retired states.
 - Demo Mode is best for leadership walkthroughs, training on future-state behavior, and platform demos that should not use live personnel names.
 
-## 7. Use the Upload Gate
+## 8. Use the Upload Gate
 
 Use `Upload Gate` before publishing new or revised markdown.
 
@@ -86,7 +94,7 @@ Use `Upload Gate` before publishing new or revised markdown.
 - If the file replaces a current live file, fill `supersedes` and confirm owner authority.
 - Resolve all blocking validation errors before upload.
 
-## 8. Daily use by role
+## 9. Daily use by role
 
 ### Crew members
 
@@ -116,7 +124,7 @@ Use `Upload Gate` before publishing new or revised markdown.
 - Pass the upload gate cleanly.
 - Do not obsolete live files without the current owner's approval path.
 
-## 8. When to escalate
+## 10. When to escalate
 
 Escalate when:
 
