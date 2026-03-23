@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vape-Jet Cultural Turbine | Mission Control</title>
+    <title>Vape-Jet Mission Control | Standard Work System</title>
     <meta
       name="description"
-      content="Interactive mission-control view of the Vape-Jet Cultural Turbine and Standard Work System."
+      content="Interactive mission-control view of the Vape-Jet Standard Work System."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -26,6 +26,7 @@
           <a href="#authority-grid">Source of Truth</a>
           <a href="#department-lane">Departments</a>
           <a href="#command-structure">Command Structure</a>
+          <a href="#onboarding-lane">Onboarding</a>
           <a href="#upload-gate">Upload Gate</a>
           <a href="#platform-guide">Guide</a>
           <a href="#template-hangar">Templates</a>
@@ -252,6 +253,64 @@
           </article>
         </section>
 
+        <section class="section" id="onboarding-lane">
+          <div class="section-heading">
+            <p class="eyebrow">Onboarding Lane</p>
+            <h2>QMS quality statement and new-hire readiness</h2>
+            <p>
+              This layer connects the QMS quality statement to company onboarding, department
+              ramps, role certification, and visible progress across the early employee journey.
+            </p>
+          </div>
+
+          <div class="readiness-layout">
+            <article class="readiness-panel">
+              <div class="readiness-head">
+                <p class="command-kicker">QMS Quality Statement</p>
+                <h3>What the quality system is trying to protect</h3>
+                <p>
+                  The quality statement should be short enough to remember, strong enough to
+                  govern release behavior, and visible enough to anchor training, audits, and
+                  daily decision-making.
+                </p>
+              </div>
+              <div class="quality-statement-card" id="quality-statement-card"></div>
+            </article>
+
+            <article class="readiness-panel">
+              <div class="readiness-head">
+                <p class="command-kicker">Company Onboarding</p>
+                <h3>General onboarding before department and role ramp</h3>
+                <p>
+                  Every new employee should complete a shared company foundation first, then move
+                  into department-specific and role-specific certification with visible progress.
+                </p>
+              </div>
+              <div class="training-summary-grid" id="onboarding-summary-grid"></div>
+              <div class="onboarding-phase-grid" id="onboarding-phase-grid"></div>
+            </article>
+          </div>
+
+          <article class="signoff-panel">
+            <div class="signoff-head">
+              <div>
+                <p class="command-kicker">Role-Based Ramps</p>
+                <h3>Department and job-type onboarding tracks with progress</h3>
+                <p>
+                  Filter the onboarding lane by department and job type to see the company
+                  foundation, the role-specific modules, and the sign-off gates expected before
+                  independent execution.
+                </p>
+              </div>
+              <div class="onboarding-filter-stack">
+                <div class="chip-row" id="onboarding-department-filters"></div>
+                <div class="chip-row" id="onboarding-role-filters"></div>
+              </div>
+            </div>
+            <div class="onboarding-track-grid" id="onboarding-track-grid"></div>
+          </article>
+        </section>
+
         <section class="section" id="upload-gate">
           <div class="section-heading">
             <p class="eyebrow">Upload Gate</p>
@@ -384,6 +443,20 @@
 
             <article class="guide-card">
               <span class="branch-meta">Step 4</span>
+              <h3>Use the onboarding lane for new-hire readiness</h3>
+              <p>
+                `Onboarding Lane` ties the QMS quality statement to company foundation, department
+                ramp, role certification, and progress visibility.
+              </p>
+              <ul>
+                <li>Start with the QMS quality statement and company foundation.</li>
+                <li>Filter by department and job type to see the right ramp.</li>
+                <li>Use progress bars and milestones to see what remains before certification.</li>
+              </ul>
+            </article>
+
+            <article class="guide-card">
+              <span class="branch-meta">Step 5</span>
               <h3>Prepare uploads through the gate</h3>
               <p>
                 `Upload Gate` is the clean-entry checkpoint for new or revised markdown before it

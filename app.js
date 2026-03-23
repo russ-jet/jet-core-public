@@ -246,6 +246,28 @@ const data = {
         "Use this branch for company-wide operating standards that apply across teams and should not be buried inside a single department.",
       cards: [
         {
+          title: "Quality Management Structure",
+          meta: "QMS posture",
+          description:
+            "Defines the company quality statement, the control posture of the QMS, and the expectation that released work is executed from governed references with evidence.",
+          bullets: [
+            "Quality statement and commitments",
+            "Controlled release and containment discipline",
+            "Training and evidence expectations",
+          ],
+        },
+        {
+          title: "Company Onboarding and Role Certification",
+          meta: "Readiness",
+          description:
+            "Defines company onboarding, department-specific role ramps, certification checkpoints, and visible progress expectations for new employees.",
+          bullets: [
+            "General company onboarding",
+            "Department and job-type tracks",
+            "Progress and sign-off visibility",
+          ],
+        },
+        {
           title: "Product Data Control",
           meta: "Data discipline",
           description:
@@ -423,7 +445,356 @@ const data = {
       description:
         "Markdown register template for revision history, superseded documents, and training impact tracking.",
     },
+    {
+      title: "QMS Quality Statement",
+      kind: "Management-system template",
+      filename: "quality-statement-template.md",
+      description:
+        "Operating-standard template for the company quality statement, QMS commitments, and quality-evidence posture.",
+    },
+    {
+      title: "New Employee Onboarding Plan",
+      kind: "Training-path template",
+      filename: "employee-onboarding-template.md",
+      description:
+        "Training-path template for company onboarding, department ramp, role certification, progress tracking, and sign-off gates.",
+    },
   ],
+  qualityStatement: {
+    title: "Quality Statement for the QMS",
+    summary:
+      "Vape-Jet quality means released work is executed from governed references, verified against requirements, and supported by trained people with evidence at every critical point.",
+    statement:
+      "Vape-Jet is committed to building, releasing, and supporting equipment and software that meet defined requirements the first time, protect customer trust, and improve through disciplined feedback.",
+    commitments: [
+      "Release only from controlled references, approved revisions, and clearly owned standards.",
+      "Train people before release, retrain on revision change or drift, and confirm understanding rather than checkbox theater.",
+      "Verify critical requirements at point of use, contain nonconformance quickly, and document evidence cleanly.",
+      "Escalate issues honestly, protect customers and operators, and feed learning back into the Cultural Turbine and QMS.",
+    ],
+  },
+  onboarding: {
+    companyStages: [
+      {
+        id: "foundation",
+        title: "Company Foundation",
+        summary:
+          "Introduces the Cultural Turbine, mission and vision support, core policies, safety expectations, and the standard-work mindset.",
+        bullets: [
+          "Culture, mission, and pillars",
+          "Safety, conduct, and communication basics",
+          "How to find the right governed source",
+        ],
+      },
+      {
+        id: "systems-access",
+        title: "Systems and Tools",
+        summary:
+          "Grants the new employee the platforms, access rules, and operating expectations needed for their lane.",
+        bullets: [
+          "Account provisioning and permissions",
+          "System-of-record orientation",
+          "Upload and revision-control boundaries",
+        ],
+      },
+      {
+        id: "department-ramp",
+        title: "Department Ramp",
+        summary:
+          "Covers team-specific work shape, handoffs, and recurring procedures before independent execution begins.",
+        bullets: [
+          "Department standards and checklists",
+          "Cross-functional handoff expectations",
+          "Escalation and coaching path",
+        ],
+      },
+      {
+        id: "role-certification",
+        title: "Role Certification",
+        summary:
+          "Completes the role-specific training path, live observations, sign-offs, and release gates required for real work.",
+        bullets: [
+          "Role-specific modules and observed practice",
+          "Lead or owner sign-off",
+          "30 / 60 / 90-day readiness review",
+        ],
+      },
+    ],
+    roleTracks: [
+      {
+        id: "marketing-content-coordinator",
+        department: "marketing",
+        role: "content-coordinator",
+        roleLabel: "Content Coordinator",
+        duration: "30-day ramp",
+        owner: "Marketing Lead",
+        summary:
+          "Ramps a new marketing team member into brand-safe content execution, website updates, and launch-asset coordination.",
+        modules: [
+          "Brand guideline orientation and asset control",
+          "Website update workflow and approval path",
+          "Social proof content creation rhythm",
+          "SEO handoff and campaign evidence basics",
+        ],
+        checkpoints: [
+          "Brand review sign-off",
+          "Website update dry run",
+          "Launch-content handoff accepted",
+        ],
+      },
+      {
+        id: "sales-account-executive",
+        department: "sales",
+        role: "account-executive",
+        roleLabel: "Account Executive",
+        duration: "30-day ramp",
+        owner: "Sales Lead",
+        summary:
+          "Prepares a new sales team member to manage opportunities cleanly, create orders correctly, and escalate machine-specific needs without drift.",
+        modules: [
+          "HubSpot opportunity hygiene and stage discipline",
+          "Odoo equipment sales order creation",
+          "Machine ticket trigger and coordination rules",
+          "Commitment-change escalation and handoff quality",
+        ],
+        checkpoints: [
+          "Quote-to-order walkthrough",
+          "Machine ticket escalation drill",
+          "Commercial handoff review",
+        ],
+      },
+      {
+        id: "finance-accountant-payroll-coordinator",
+        department: "finance",
+        role: "accountant-payroll-coordinator",
+        roleLabel: "Accountant / Payroll Coordinator",
+        duration: "45-day ramp",
+        owner: "Finance Lead",
+        summary:
+          "Builds controlled close discipline, AP and AR handling, payroll submission readiness, and vendor-payment governance.",
+        modules: [
+          "Month-end close calendar and reconciliation cadence",
+          "AP invoice intake, approval, and payment-run controls",
+          "Customer invoicing, cash application, and collection basics",
+          "Payroll preparation, review, and submission controls",
+        ],
+        checkpoints: [
+          "Close-binder review",
+          "Payroll pre-submission checklist sign-off",
+          "Vendor setup control check",
+        ],
+      },
+      {
+        id: "customer-support-technician",
+        department: "customer-support",
+        role: "support-technician",
+        roleLabel: "Support Technician",
+        duration: "30-day ramp",
+        owner: "Customer Support Lead",
+        summary:
+          "Prepares a new support technician to intake VJSD tickets, use Brain safely, route service work correctly, and escalate into VJN or VCMP when needed.",
+        modules: [
+          "VJSD intake and triage discipline",
+          "Brain telemetry review and remote-session boundaries",
+          "Zoom troubleshooting and spare-parts routing",
+          "Odoo service-order and escalation handoff quality",
+        ],
+        checkpoints: [
+          "Remote-support consent drill",
+          "Escalation quality review",
+          "Customer closure note acceptance",
+        ],
+      },
+      {
+        id: "manufacturing-technician",
+        department: "manufacturing",
+        role: "manufacturing-technician",
+        roleLabel: "Manufacturing Technician",
+        duration: "45-day ramp",
+        owner: "Manufacturing Lead",
+        summary:
+          "Readies a new technician to execute released work-cell standards, consume Product Home references correctly, and close out builds with clean evidence.",
+        modules: [
+          "Workstation discipline and released build packet use",
+          "Controlled-spec application and evidence quality",
+          "Odoo execution records and closeout expectations",
+          "5S, standup, and escalation behavior on the floor",
+        ],
+        checkpoints: [
+          "Observed work-cell execution",
+          "Build packet readback",
+          "Final closeout sign-off",
+        ],
+      },
+      {
+        id: "logistics-coordinator",
+        department: "logistics",
+        role: "logistics-coordinator",
+        roleLabel: "Logistics Coordinator",
+        duration: "30-day ramp",
+        owner: "Logistics Lead",
+        summary:
+          "Builds inventory accuracy, order-release discipline, spare-parts fulfillment, and shipment-release readiness for a new logistics team member.",
+        modules: [
+          "Inventory control and bin accuracy expectations",
+          "Odoo inventory movement and traceability rules",
+          "Shipment release and spare-parts fulfillment",
+          "Order-release readiness and escalation path",
+        ],
+        checkpoints: [
+          "Pick-path accuracy check",
+          "Shipment release evidence review",
+          "Inventory-move traceability sign-off",
+        ],
+      },
+      {
+        id: "quality-control-inspector",
+        department: "quality-control",
+        role: "quality-control-inspector",
+        roleLabel: "Quality Control Inspector",
+        duration: "45-day ramp",
+        owner: "Quality Control Lead",
+        summary:
+          "Qualifies a new inspector to verify released requirements, contain nonconformance, and protect final release decisions with evidence.",
+        modules: [
+          "Checkpoint discipline and acceptance criteria use",
+          "Controlled requirement verification",
+          "Nonconformance containment and disposition flow",
+          "Release gate evidence and escalation boundaries",
+        ],
+        checkpoints: [
+          "Observed inspection sequence",
+          "Containment drill",
+          "Release authority sign-off",
+        ],
+      },
+      {
+        id: "product-design-engineer",
+        department: "product-design",
+        role: "product-design-engineer",
+        roleLabel: "Product Design Engineer",
+        duration: "45-day ramp",
+        owner: "Product Design Lead",
+        summary:
+          "Ramps a new product design team member into Fusion discipline, design-review expectations, vendor-spec handling, and compatibility design support.",
+        modules: [
+          "Fusion modeling and file-structure expectations",
+          "Drawing-pack readiness and release-review inputs",
+          "Vendor spec and fit/function documentation",
+          "VCMP fixture-design handoff rules",
+        ],
+        checkpoints: [
+          "Design review dry run",
+          "Part-number alignment check",
+          "Released drawing packet acceptance",
+        ],
+      },
+      {
+        id: "engineering-release-engineer",
+        department: "engineering",
+        role: "release-engineer",
+        roleLabel: "Release Engineer",
+        duration: "45-day ramp",
+        owner: "Engineering Lead",
+        summary:
+          "Prepares a new engineering team member to control changes, manage specs, and align Fusion, Odoo, and downstream release evidence.",
+        modules: [
+          "Engineering change control classes and routing",
+          "Controlled spec ownership and revision logic",
+          "Fusion-to-Odoo BOM alignment discipline",
+          "Release packet completeness and downstream impact checks",
+        ],
+        checkpoints: [
+          "Change-control package review",
+          "Controlled-spec revision exercise",
+          "Release packet sign-off",
+        ],
+      },
+      {
+        id: "software-release-engineer",
+        department: "software",
+        role: "software-release-engineer",
+        roleLabel: "Software Release Engineer",
+        duration: "30-day ramp",
+        owner: "Software Lead",
+        summary:
+          "Builds the release discipline needed for VJN intake, support handoff, field-readiness review, and controlled software promotion.",
+        modules: [
+          "VJN intake and prioritization expectations",
+          "Release window and deployment-readiness review",
+          "Support handoff and release-note quality",
+          "Brain-linked verification and field-readiness coordination",
+        ],
+        checkpoints: [
+          "Release note review",
+          "Support handoff acceptance",
+          "Field-release go/no-go drill",
+        ],
+      },
+    ],
+    demoAssignments: {
+      "marketing-content-coordinator": {
+        assignee: "Nora 'Jinx' Hale",
+        completed: 5,
+        status: "On track",
+        due: "2026-03-29",
+      },
+      "sales-account-executive": {
+        assignee: "Evan 'Ace' Mercer",
+        completed: 4,
+        status: "Needs machine-ticket coaching",
+        due: "2026-03-31",
+      },
+      "finance-accountant-payroll-coordinator": {
+        assignee: "Mara 'Doc' Ellis",
+        completed: 6,
+        status: "Awaiting payroll gate sign-off",
+        due: "2026-03-28",
+      },
+      "customer-support-technician": {
+        assignee: "Owen 'Lifeline' Price",
+        completed: 3,
+        status: "Remote-session consent retraining open",
+        due: "2026-03-27",
+      },
+      "manufacturing-technician": {
+        assignee: "Elias 'Tunnel Rat' Cole",
+        completed: 5,
+        status: "Final observed closeout still open",
+        due: "2026-03-30",
+      },
+      "logistics-coordinator": {
+        assignee: "Mason 'Shipwreck' Pike",
+        completed: 4,
+        status: "Shipment release evidence review pending",
+        due: "2026-03-29",
+      },
+      "quality-control-inspector": {
+        assignee: "Naomi 'Helix' Ward",
+        completed: 5,
+        status: "Containment drill accepted",
+        due: "2026-03-28",
+      },
+      "product-design-engineer": {
+        assignee: "Iris 'Airborne' Sloan",
+        completed: 4,
+        status: "Drawing pack acceptance in progress",
+        due: "2026-04-01",
+      },
+      "engineering-release-engineer": {
+        assignee: "Cole 'Beach Head' Turner",
+        completed: 6,
+        status: "Release packet sign-off scheduled",
+        due: "2026-03-28",
+      },
+      "software-release-engineer": {
+        assignee: "Jared 'Mainframe Two' Knox",
+        completed: 4,
+        status: "Support handoff quality review pending",
+        due: "2026-03-30",
+      },
+    },
+  },
   authorities: [
     {
       title: "Fusion",
@@ -1094,6 +1465,30 @@ const scenarioData = {
       },
       {
         type: "Skeleton Layer",
+        title: "QMS Quality Statement Scaffold",
+        lane: "Management System",
+        revision: "A",
+        status: "draft",
+        owner: "Operations Standard Owner",
+        acceptance: "Statement structure defined",
+        training: "company-wide",
+        supersedes: "none",
+        note: "Pilot mode exposes the company quality statement and QMS commitments as structure before a richer controlled example library is shown.",
+      },
+      {
+        type: "Skeleton Layer",
+        title: "New Employee Onboarding Framework",
+        lane: "Management System",
+        revision: "A",
+        status: "draft",
+        owner: "Operations Standard Owner",
+        acceptance: "Onboarding scaffold defined",
+        training: "company-wide",
+        supersedes: "none",
+        note: "Company onboarding, department ramps, role certification, and progress tracking appear in pilot as template lanes only.",
+      },
+      {
+        type: "Skeleton Layer",
         title: "Demo Handoff",
         lane: "Demo Mode",
         revision: "A",
@@ -1515,6 +1910,30 @@ const scenarioData = {
       },
     ],
     documentSets: [
+      {
+        type: "Operating Standard",
+        title: "QMS Quality Statement and Commitment Standard",
+        lane: "Management System",
+        revision: "B",
+        status: "active",
+        owner: "Nick 'Breaker' Dalton",
+        acceptance: "10 of 10 lead acknowledgements complete",
+        training: "company-wide",
+        supersedes: "Rev A",
+        note: "Active demo example showing a fully released quality statement tied to training, controlled release, and evidence expectations.",
+      },
+      {
+        type: "Training Path",
+        title: "Company Onboarding and Role Certification Framework",
+        lane: "Management System",
+        revision: "C",
+        status: "active",
+        owner: "Grant 'Duke' Mercer",
+        acceptance: "All department leads current on onboarding ownership",
+        training: "company-wide",
+        supersedes: "Rev B",
+        note: "Shows a mature onboarding framework with company orientation, department ramps, role-specific certification, and progress tracking.",
+      },
       {
         type: "Controlled Engineering Spec",
         title: "Pump Head Connector Interface Control Spec",
@@ -2986,6 +3405,12 @@ const retrainingList = document.querySelector("#retraining-list");
 const trainingFilters = document.querySelector("#training-filters");
 const signoffGrid = document.querySelector("#signoff-grid");
 const documentGrid = document.querySelector("#document-grid");
+const qualityStatementCard = document.querySelector("#quality-statement-card");
+const onboardingSummaryGrid = document.querySelector("#onboarding-summary-grid");
+const onboardingPhaseGrid = document.querySelector("#onboarding-phase-grid");
+const onboardingDepartmentFilters = document.querySelector("#onboarding-department-filters");
+const onboardingRoleFilters = document.querySelector("#onboarding-role-filters");
+const onboardingTrackGrid = document.querySelector("#onboarding-track-grid");
 const uploadActor = document.querySelector("#upload-actor");
 const uploadFile = document.querySelector("#upload-file");
 const uploadRuleList = document.querySelector("#upload-rule-list");
@@ -3004,6 +3429,8 @@ let activeDepartment = "all";
 let activeDepartmentDocId = "";
 let activeScenario = "pilot";
 let activeTrainingTeam = "all";
+let activeOnboardingDepartment = "all";
+let activeOnboardingRole = "all";
 let searchIsDocked = false;
 let latestUploadReport = null;
 
@@ -3061,6 +3488,37 @@ function getPilotDepartmentBlueprint(departmentId) {
       "Reopen retraining on revision change, drift, or understanding gaps",
     ],
   };
+}
+
+function getOnboardingTracks() {
+  return data.onboarding.roleTracks.map((track) => {
+    const totalMilestones = track.modules.length + track.checkpoints.length;
+    const demoAssignment = data.onboarding.demoAssignments[track.id] ?? {};
+    const completed = isPilotScenario() ? 0 : Math.min(demoAssignment.completed ?? 0, totalMilestones);
+    const percent = totalMilestones === 0 ? 0 : Math.round((completed / totalMilestones) * 100);
+
+    return {
+      ...track,
+      assignee: isPilotScenario() ? "New hire template" : demoAssignment.assignee ?? "Assigned employee",
+      completed,
+      totalMilestones,
+      percent,
+      due: isPilotScenario() ? "Starts on assignment" : demoAssignment.due ?? "TBD",
+      status: isPilotScenario() ? "Template lane" : demoAssignment.status ?? "In progress",
+      note: isPilotScenario()
+        ? "Use this track as the onboarding scaffold once a real employee is assigned."
+        : "Live-looking demo progress for a fictional employee in the role ramp.",
+    };
+  });
+}
+
+function getVisibleOnboardingTracks() {
+  return getOnboardingTracks().filter((track) => {
+    const matchesDepartment =
+      activeOnboardingDepartment === "all" || track.department === activeOnboardingDepartment;
+    const matchesRole = activeOnboardingRole === "all" || track.role === activeOnboardingRole;
+    return matchesDepartment && matchesRole;
+  });
 }
 
 function getStatusClass(status) {
@@ -4090,6 +4548,237 @@ function renderDepartmentDetail(item) {
   });
 }
 
+function renderQualityStatement() {
+  qualityStatementCard.innerHTML = `
+    <div class="quality-statement-shell">
+      <p>${escapeHtml(data.qualityStatement.summary)}</p>
+      <div class="quality-statement-callout">
+        <p>${escapeHtml(data.qualityStatement.statement)}</p>
+      </div>
+      <ul>
+        ${data.qualityStatement.commitments
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("")}
+      </ul>
+    </div>
+  `;
+}
+
+function renderOnboarding() {
+  const allTracks = getOnboardingTracks();
+  const departmentScopedTracks =
+    activeOnboardingDepartment === "all"
+      ? allTracks
+      : allTracks.filter((track) => track.department === activeOnboardingDepartment);
+
+  const roleOptions = [
+    { id: "all", label: "All Job Types" },
+    ...Array.from(
+      new Map(
+        departmentScopedTracks.map((track) => [track.role, { id: track.role, label: track.roleLabel }]),
+      ).values(),
+    ),
+  ];
+
+  if (!roleOptions.some((option) => option.id === activeOnboardingRole)) {
+    activeOnboardingRole = "all";
+  }
+
+  const visibleTracks = getVisibleOnboardingTracks();
+  const totalMilestones = visibleTracks.reduce((sum, track) => sum + track.totalMilestones, 0);
+  const totalCompleted = visibleTracks.reduce((sum, track) => sum + track.completed, 0);
+  const averagePercent =
+    visibleTracks.length === 0
+      ? 0
+      : Math.round(
+          visibleTracks.reduce((sum, track) => sum + track.percent, 0) / visibleTracks.length,
+        );
+
+  const summaryCards = isPilotScenario()
+    ? [
+        {
+          label: "Onboarding mode",
+          value: "Template",
+          note: "Pilot keeps company onboarding visible without pretending real progress already exists.",
+        },
+        {
+          label: "Company stages",
+          value: String(data.onboarding.companyStages.length),
+          note: "Foundation, systems, department ramp, and role certification stay visible from day one.",
+        },
+        {
+          label: "Role tracks",
+          value: String(visibleTracks.length),
+          note: "Department and job-type ramps are defined even before real hires are attached.",
+        },
+        {
+          label: "Progress indicator",
+          value: "0%",
+          note: "Progress bars activate once a new employee is assigned and milestone sign-offs begin.",
+        },
+      ]
+    : [
+        {
+          label: "Average progress",
+          value: `${averagePercent}%`,
+          note: `${totalCompleted} of ${totalMilestones} visible milestones accepted across the current filter.`,
+        },
+        {
+          label: "Visible tracks",
+          value: String(visibleTracks.length),
+          note: "Department and role filters narrow the onboarding population without losing the shared company foundation.",
+        },
+        {
+          label: "Company stages",
+          value: String(data.onboarding.companyStages.length),
+          note: "Every employee moves through the same four stage structure before independent execution.",
+        },
+        {
+          label: "QMS linkage",
+          value: "Required",
+          note: "Role ramps stay tied to quality commitments, evidence, and release authority expectations.",
+        },
+      ];
+
+  onboardingSummaryGrid.innerHTML = summaryCards
+    .map(
+      (card) => `
+        <article class="training-summary-card">
+          <span class="branch-meta">${escapeHtml(card.label)}</span>
+          <strong>${escapeHtml(card.value)}</strong>
+          <p>${escapeHtml(card.note)}</p>
+        </article>
+      `,
+    )
+    .join("");
+
+  onboardingPhaseGrid.innerHTML = data.onboarding.companyStages
+    .map(
+      (stage, index) => `
+        <article class="onboarding-phase-card">
+          <span class="branch-meta">Phase ${escapeHtml(String(index + 1))}</span>
+          <h3>${escapeHtml(stage.title)}</h3>
+          <p>${escapeHtml(stage.summary)}</p>
+          <ul>${stage.bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        </article>
+      `,
+    )
+    .join("");
+
+  onboardingDepartmentFilters.innerHTML = [
+    { id: "all", label: "All Departments" },
+    ...data.departments.filter((item) => item.id !== "all"),
+  ]
+    .map(
+      (option) => `
+        <button
+          class="chip ${option.id === activeOnboardingDepartment ? "is-active" : ""}"
+          type="button"
+          data-onboarding-department="${escapeHtml(option.id)}"
+        >
+          ${escapeHtml(option.label)}
+        </button>
+      `,
+    )
+    .join("");
+
+  onboardingRoleFilters.innerHTML = roleOptions
+    .map(
+      (option) => `
+        <button
+          class="chip ${option.id === activeOnboardingRole ? "is-active" : ""}"
+          type="button"
+          data-onboarding-role="${escapeHtml(option.id)}"
+        >
+          ${escapeHtml(option.label)}
+        </button>
+      `,
+    )
+    .join("");
+
+  onboardingTrackGrid.innerHTML =
+    visibleTracks.length > 0
+      ? visibleTracks
+          .map((track) => {
+            const statusClass = isPilotScenario()
+              ? "is-warning"
+              : track.percent >= 80
+                ? "is-ok"
+                : track.percent >= 45
+                  ? "is-warning"
+                  : "is-alert";
+
+            return `
+              <article class="onboarding-track-card">
+                <div class="progress-card-head">
+                  <div>
+                    <span class="branch-meta">${escapeHtml(getTeamLabel(track.department))} · ${escapeHtml(track.roleLabel)}</span>
+                    <h3>${escapeHtml(track.assignee)}</h3>
+                  </div>
+                  <span class="status-pill ${statusClass}">${
+                    isPilotScenario() ? "Template lane" : escapeHtml(`${track.percent}% complete`)
+                  }</span>
+                </div>
+                <p>${escapeHtml(track.summary)}</p>
+                <div class="department-detail-meta">
+                  <span class="branch-meta">Owner · ${escapeHtml(track.owner)}</span>
+                  <span class="branch-meta">Duration · ${escapeHtml(track.duration)}</span>
+                  <span class="branch-meta">Due · ${escapeHtml(track.due)}</span>
+                </div>
+                <div class="progress-track" aria-hidden="true">
+                  <div class="progress-fill" style="width: ${isPilotScenario() ? 0 : track.percent}%"></div>
+                </div>
+                <div class="progress-card-footer">
+                  <span>${escapeHtml(String(track.completed))} of ${escapeHtml(String(track.totalMilestones))} milestones complete</span>
+                  <span>${escapeHtml(track.status)}</span>
+                  <span>${isPilotScenario() ? "Assign hire to begin" : "Live-looking demo track"}</span>
+                </div>
+                <p class="onboarding-track-note">${escapeHtml(track.note)}</p>
+                <div class="onboarding-track-sections">
+                  <div class="onboarding-track-section">
+                    <p class="command-kicker">Core Modules</p>
+                    <ul>${track.modules.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+                  </div>
+                  <div class="onboarding-track-section">
+                    <p class="command-kicker">Sign-Off Gates</p>
+                    <ul>${track.checkpoints.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("")
+      : `
+          <article class="onboarding-track-card">
+            <div class="progress-card-head">
+              <div>
+                <span class="branch-meta">No visible track</span>
+                <h3>No onboarding track matches the current filter</h3>
+              </div>
+              <span class="status-pill is-warning">Reset filter</span>
+            </div>
+            <p>Choose All Departments or All Job Types to reopen the full onboarding library.</p>
+          </article>
+        `;
+
+  onboardingDepartmentFilters
+    .querySelectorAll("[data-onboarding-department]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        activeOnboardingDepartment = button.dataset.onboardingDepartment;
+        activeOnboardingRole = "all";
+        renderOnboarding();
+      });
+    });
+
+  onboardingRoleFilters.querySelectorAll("[data-onboarding-role]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeOnboardingRole = button.dataset.onboardingRole;
+      renderOnboarding();
+    });
+  });
+}
+
 function renderTemplates() {
   templateGrid.innerHTML = data.templates
     .map(
@@ -4620,6 +5309,8 @@ function renderScenarioAwareSections() {
   renderTrainingSignoffs();
   renderDocumentSnapshot();
   renderDepartments();
+  renderQualityStatement();
+  renderOnboarding();
   renderUploaderOptions();
   renderUploadReport(null);
   searchIndex = buildSearchIndex();
@@ -5291,6 +5982,31 @@ function buildSearchIndex() {
     bullets: [template.filename, template.kind],
   }));
 
+  const qualityItems = [
+    {
+      label: data.qualityStatement.title,
+      section: "Management System · QMS",
+      description: data.qualityStatement.summary,
+      bullets: data.qualityStatement.commitments,
+    },
+  ];
+
+  const onboardingItems = getOnboardingTracks().map((track) => ({
+    label: `${getTeamLabel(track.department)} · ${track.roleLabel}`,
+    section: isPilotScenario()
+      ? "Onboarding Lane · Pilot blueprint"
+      : "Onboarding Lane · Demo progress",
+    description: track.summary,
+    bullets: [
+      `Owner: ${track.owner}`,
+      `Duration: ${track.duration}`,
+      isPilotScenario()
+        ? "Template-only until a new employee is assigned"
+        : `${track.percent}% complete · ${track.status}`,
+      ...track.checkpoints.slice(0, 2),
+    ],
+  }));
+
   const trainingItems = isPilotScenario()
     ? [
         {
@@ -5323,6 +6039,8 @@ function buildSearchIndex() {
     ...branchItems,
     ...departmentItems,
     ...flowItems,
+    ...qualityItems,
+    ...onboardingItems,
     ...templateItems,
     ...trainingItems,
     ...documentItems,

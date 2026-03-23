@@ -8,7 +8,7 @@ Use this platform to find the current standard, confirm which system owns the li
 - Use `Departments` when the question is about role ownership, recurring procedures, training paths, or department-level execution.
 - Use `Shared Systems` when the question is mainly about how to use a platform such as Fusion, Odoo, Jira, Brain, HubSpot, Slack, or Zoom.
 - Use `Cross-Functional Flows` when the question is about handoffs between teams.
-- Use `Management System` when the question is a company-wide rule such as change control, floor management, AI governance, or product data control.
+- Use `Management System` when the question is a company-wide rule such as the quality statement, onboarding, change control, floor management, AI governance, or product data control.
 - Use `Governance` when the question is about metadata, templates, review cadence, upload rules, or revision control.
 
 ## 2. Use search correctly
@@ -42,7 +42,16 @@ Use `Command Structure` to connect standards to people, authority, and acknowled
 - knowledge drift
 - incident, defect, or audit signal
 
-## 5. Use the Department Workbench
+## 5. Use the Onboarding Lane
+
+Use `Onboarding Lane` when the question is about the QMS quality statement, general company onboarding, or role-specific readiness for a new employee.
+
+- The quality statement explains what the QMS is trying to protect.
+- Company onboarding sets the shared foundation every employee should complete first.
+- Department and job-type tracks show the role-specific ramp and sign-off gates.
+- Progress indicators show whether the ramp is still in structure mode or actively moving toward certification.
+
+## 6. Use the Department Workbench
 
 Use `Departments` to inspect blueprint bullets in `Pilot View` or open clickable standards, checklists, training paths, and linked artifacts in `Demo Mode`.
 
@@ -52,7 +61,7 @@ Use `Departments` to inspect blueprint bullets in `Pilot View` or open clickable
 - Linked checklists and forms can be opened from the workbench.
 - Checklists, training paths, and related artifacts show backlinks to the standards that use them.
 
-## 6. Start in Pilot View, then switch to Demo Mode when needed
+## 7. Start in Pilot View, then switch to Demo Mode when needed
 
 `Pilot View` is now the default opening mode.
 
@@ -61,7 +70,7 @@ Use `Departments` to inspect blueprint bullets in `Pilot View` or open clickable
 - Pilot View does not show simulated work items, simulated revision histories, or populated crew sign-off examples.
 - Use Pilot View when the goal is to understand the operating shape, ownership lanes, and template structure before looking at a richer example library.
 
-## 7. Use Demo Mode when presenting the platform
+## 8. Use Demo Mode when presenting the platform
 
 Use `Demo Mode` when you want a mature live-looking system with fictional personnel, deeper revision history, and varied sign-off states.
 
@@ -70,7 +79,7 @@ Use `Demo Mode` when you want a mature live-looking system with fictional person
 - Demo Mode is where clickable fictional standards, richer controlled document sets, and linked training/sign-off examples appear.
 - Demo Mode is best for leadership walkthroughs, training on future-state behavior, and platform demos that should not use live personnel names.
 
-## 8. Use the Upload Gate
+## 9. Use the Upload Gate
 
 Use `Upload Gate` before publishing new or revised markdown.
 
@@ -95,7 +104,7 @@ Use `Upload Gate` before publishing new or revised markdown.
 - If the file replaces a current live file, fill `supersedes` and confirm owner authority.
 - Resolve all blocking validation errors before upload.
 
-## 9. Daily use by role
+## 10. Daily use by role
 
 ### Crew members
 
@@ -125,7 +134,7 @@ Use `Upload Gate` before publishing new or revised markdown.
 - Pass the upload gate cleanly.
 - Do not obsolete live files without the current owner's approval path.
 
-## 10. When to escalate
+## 11. When to escalate
 
 Escalate when:
 
@@ -135,7 +144,7 @@ Escalate when:
 - a revision affects downstream teams or systems
 - a file cannot pass the upload gate cleanly
 
-## 9. Minimum good behavior
+## 12. Minimum good behavior
 
 - Do not duplicate the truth across pages.
 - Do not bypass revision control.

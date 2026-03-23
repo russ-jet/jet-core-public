@@ -1060,7 +1060,10 @@ h3 {
 
 .org-node ul,
 .retraining-card ul,
-.upload-issues-card ul {
+.upload-issues-card ul,
+.quality-statement-shell ul,
+.onboarding-phase-card ul,
+.onboarding-track-section ul {
   margin: 0;
   padding-left: 1rem;
   color: var(--muted-strong);
@@ -1178,9 +1181,101 @@ h3 {
 .training-progress-list,
 .retraining-list,
 .signoff-grid,
-.document-grid {
+.document-grid,
+.onboarding-phase-grid,
+.onboarding-track-grid {
   display: grid;
   gap: 0.9rem;
+}
+
+.quality-statement-shell {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.quality-statement-shell p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.quality-statement-callout,
+.onboarding-phase-card,
+.onboarding-track-card {
+  min-width: 0;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    rgba(10, 10, 10, 0.92);
+}
+
+.quality-statement-callout p {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.onboarding-phase-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.onboarding-phase-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.onboarding-phase-card h3,
+.onboarding-track-card h3 {
+  margin-top: 0.2rem;
+  max-width: 100%;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
+}
+
+.onboarding-phase-card h3 {
+  font-size: clamp(1.15rem, 1.6vw, 1.55rem);
+}
+
+.onboarding-filter-stack {
+  display: grid;
+  gap: 0.55rem;
+  justify-items: end;
+}
+
+.onboarding-track-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.onboarding-track-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.onboarding-track-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.onboarding-track-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.onboarding-track-section {
+  min-width: 0;
+  padding: 0.85rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  display: grid;
+  gap: 0.55rem;
 }
 
 .progress-card-head,
@@ -1529,6 +1624,8 @@ h3 {
   .retraining-list,
   .signoff-grid,
   .document-grid,
+  .onboarding-track-grid,
+  .onboarding-track-sections,
   .guide-layout,
   .guide-operations-grid {
     grid-template-columns: 1fr;
@@ -1541,6 +1638,7 @@ h3 {
   .training-summary-grid,
   .org-grid,
   .org-facts,
+  .onboarding-phase-grid,
   .upload-status-strip,
   .upload-issue-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1582,6 +1680,7 @@ h3 {
   .training-summary-grid,
   .org-grid,
   .org-facts,
+  .onboarding-phase-grid,
   .guide-layout,
   .guide-operations-grid,
   .upload-controls,
@@ -1599,6 +1698,10 @@ h3 {
 
   .signoff-head {
     grid-template-columns: 1fr;
+  }
+
+  .onboarding-filter-stack {
+    justify-items: start;
   }
 
   .footer {
