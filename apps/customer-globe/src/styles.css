@@ -256,6 +256,12 @@ input {
   color: var(--vj-green);
 }
 
+.ghost-cta.is-active {
+  border-color: var(--vj-green);
+  background: rgba(57, 255, 66, 0.14);
+  color: var(--vj-green);
+}
+
 .primary-cta:hover,
 .ghost-cta:hover,
 .chip:hover,

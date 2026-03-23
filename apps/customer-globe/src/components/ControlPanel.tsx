@@ -26,6 +26,7 @@ interface ControlPanelProps {
   selectedMachineTypes: string[];
   searchQuery: string;
   activeCountry: string | null;
+  isGlobalViewActive: boolean;
   displayMode: DisplayMode;
   internalDetailEnabled: boolean;
   searchHighlightLabels: string[];
@@ -50,6 +51,7 @@ export default function ControlPanel({
   selectedMachineTypes,
   searchQuery,
   activeCountry,
+  isGlobalViewActive,
   displayMode,
   internalDetailEnabled,
   searchHighlightLabels,
@@ -156,7 +158,11 @@ export default function ControlPanel({
         <a className="primary-cta" href={data.meta.ctaUrl} target="_blank" rel="noreferrer">
           Book a Test Flight
         </a>
-        <button className="ghost-cta" type="button" onClick={() => onCountrySelect(null)}>
+        <button
+          className={isGlobalViewActive ? "ghost-cta is-active" : "ghost-cta"}
+          type="button"
+          onClick={() => onCountrySelect(null)}
+        >
           Global View
         </button>
       </div>

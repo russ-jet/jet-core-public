@@ -324,6 +324,11 @@ export default function App({ initialData }: AppProps) {
     data.meta.audience === "internal" ||
     data.meta.disclosure.toLowerCase().includes("internal") ||
     data.cities.some((city) => Array.isArray(city.locations) && city.locations.length > 0);
+  const isGlobalViewActive =
+    activeCountry === null &&
+    focusedRegionId === null &&
+    selectedCityId === null &&
+    !hasSearchDrivenDetailMode;
   const orbitShift = ((((orbitLongitude % 360) + 360) % 360) - 180) / 180;
 
   return (
@@ -342,6 +347,7 @@ export default function App({ initialData }: AppProps) {
           selectedMachineTypes={selectedMachineTypes}
           searchQuery={searchQuery}
           activeCountry={activeCountry}
+          isGlobalViewActive={isGlobalViewActive}
           displayMode={displayMode}
           internalDetailEnabled={internalDetailEnabled}
           searchHighlightLabels={searchHighlights.labels}
