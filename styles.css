@@ -1248,6 +1248,20 @@ h3 {
   justify-items: end;
 }
 
+.onboarding-head {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.onboarding-head .onboarding-filter-stack {
+  width: 100%;
+  justify-items: start;
+}
+
+.onboarding-head .chip-row {
+  justify-content: flex-start;
+}
+
 .onboarding-track-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
