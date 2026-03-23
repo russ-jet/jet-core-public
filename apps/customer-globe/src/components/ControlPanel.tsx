@@ -317,7 +317,7 @@ export default function ControlPanel({
       <p className="data-note">
         {internalDetailEnabled
           ? "Authenticated internal mode is active. Customer, serial, and street-level search is available."
-          : "Data refreshed manually from the Odoo export pipeline. Public view is city-level only."}
+          : "Come On, Let's Vape-Jet!"}
       </p>
     </aside>
   );
